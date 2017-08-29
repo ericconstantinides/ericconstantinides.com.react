@@ -3,7 +3,7 @@ import React from 'react'
 const Experience = props => {
   function renderProjects (project) {
     return (
-      <article className='project'>
+      <article className='project' key={project.title}>
         <div className='project__inner'>
           <div className='project__image-wrapper'>
             <img
@@ -22,7 +22,7 @@ const Experience = props => {
   }
   function renderPosition (position) {
     return (
-      <div className='position'>
+      <div className='position' key={position.title}>
         <strong>{position.title}</strong> {position.meta}
       </div>
     )

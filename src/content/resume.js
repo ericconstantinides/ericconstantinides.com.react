@@ -27,7 +27,7 @@ const resume = {
       startDate: 'Sep, 2015',
       endDate: 'Jan, 2017',
       position: [{ title: 'Lead Drupal Front-end Developer' }],
-      responsibilities: `Built, maintained, and co-designed the front-end for eversport.tv, an online video platform(OVP). Created and updated EverSport’s custom Drupal themes and modules using PHP, HTML, JavaScript, and CSS. Redesigned and rebuilt eversport.tv from adaptive functionality to responsive functionality. Developed and co-designed the Drupal CMS admin theme. Designed and built the user-interface for a responsive and embeddable JavaScript-based content player to run EverSport's content on any 3rd party website. Converted player from jQuery to Vanilla JavaScript. Wrote custom Gulp processes to compile multiple themes concurrently with shared assets.`,
+      responsibilities: `Built, maintained, and co-designed the front-end for eversport.tv, an online video platform (OVP). Created and updated EverSport's custom themes and modules using PHP, HTML, JavaScript, and CSS. Rebuilt site and player to be usable on all platforms. Developed and co-designed the CMS admin theme. Designed and developed the user-interface for the embeddable JavaScript-based content player to run on 3rd party sites.`,
       projects: getProjects('EverSport Media')
     },
     {
@@ -45,7 +45,7 @@ const resume = {
           meta: '(Jan, 2012 - Jan, 2014)'
         }
       ],
-      responsibilities: `Orchestrated weekly developer meetings. Drafted timelines and estimates for future projects with producers. Composed technical briefs for client-side contracts. Architected content structure for Drupal CMS and WordPress CMS sites. For Drupal specifically, customized content-types, fields, field-collections, and views. Set up and customized Drupal modules including Views, Entity, Entity Reference, Entity View Modes, Devel, Field Collections, and Media. Created content types with various user-editable fields. Customized template.php and .tpl.php files for all PHP logic with Drupal APIs to separate PHP code from HTML. Wrote custom modules with Drupal and contrib module APIs. Hand-coded HTML and SCSS (CSS) from designer's PSD files into responsive web pages. Implemented JavaScript libraries and wrote custom JavaScript/jQuery code. Employed best practices for optimal load times and tested sites on multiple browsers and viewports. Used Git for revision control.`,
+      responsibilities: `Architected content structure for websites. Hand-coded HTML, SCSS (CSS), and JS from designer's PSD files into responsive and interactive web pages. Implemented JavaScript libraries and wrote custom JavaScript/jQuery code. Orchestrated weekly developer meetings. Helped draft timelines and estimates for future projects. Composed technical briefs for client-side contracts.`,
       projects: getProjects('Flickerbox, Inc')
     },
     {
@@ -63,7 +63,7 @@ const resume = {
           meta: '(2015 - Dec, 2016)'
         }
       ],
-      responsibilities: `Set up sites using my (Digital Ocean) Virtual Private Server. Create entity relationship diagrams. Create site maps. Transform PSD mock-ups into Drupal HTML templates. Code CSS, HTML, and jQuery. Write custom modules. Host and manage sites.`,
+      responsibilities: `Set up sites using a Virtual Private Server (Digital Ocean). Transform mock-ups into HTML templates. Code CSS, HTML, and JavaScript. Host and manage sites.`,
       projects: getProjects('Eric Constantinides')
     }
   ],

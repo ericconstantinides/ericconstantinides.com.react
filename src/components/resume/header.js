@@ -28,14 +28,18 @@ const Header = props => {
                 title='GitHub'
                 target='_blank'
                 data-print-url={`github.com/${props.github}`}
-              />
+              >
+                Github
+              </a>
               <a
                 className='social-link social-link__linkedin'
                 href={`//linkedin.com/in/${props.linkedin}`}
                 title='LinkedIn'
                 target='_blank'
                 data-print-url={`linkedin.com/in/${props.linkedin}`}
-              />
+              >
+                LinkedIn
+              </a>
             </li>
           </ul>
         </div>
