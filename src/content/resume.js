@@ -1,5 +1,5 @@
-import skills from './skills.js'
-import projects from './portfolio.json'
+import skills from './skills'
+import projects from './projects'
 // return array of objects of skills
 
 // return array of objects of employer
@@ -16,10 +16,11 @@ const resume = {
     github: 'ericconstantinides',
     linkedin: 'constantinides'
   },
-  introduction: `<p>Hi, I'm Eric. I'm a web app developer with a passion on good design (UI) and great usability (UX). As an expert CSS/JS developer, I'm passionate about taking complex interactive and responsive designs and make them flow seamlessly. I am a full-time MERN Stack (Mongo, Express, React, Node) stack app developer specializing React, Redux, ES2015/ES6, and Vanilla JS.</p>
-  <p>Prior, I was a front-end developer at EverSport Media. At EverSport, I was the lead front-end developer tasked with developing the consumer-facing and administration theme of eversport.tv. Previous to EverSport, I was senior web developer at Flickerbox in San Francisco, building websites for clients like Pure Storage and Okta.</p>
-  <p>As a full-stack developer, I've created over 20 enterprise-level websites, all without the use of pre-built themes. My most recent website is constantlybeing.com, a sustainability and lifestyle blog.</p>
-  <p>I'm a San Francisco Bay Area native who loves mirrorless photography, my papillon dog Layla, and my best friend and wife, <a href="https://www.annachich.com/about">Becky</a>.</p>`,
+  canonical:
+    'bear://x-callback-url/open-note?id=3E14B199-78A5-468E-905C-793F78F74C5D-74885-0003EB8E172B8A9F',
+  introduction: `<p><b>In a nutshell:</b> I'm am a MERN (Mongo, Express, React, Node) stack developer specializing in React, Redux, ES2015/ES6, Sass, and Vanilla JS.</p>
+  <p><b>Previously:</b> I was lead front-end developer at EverSport Media in charge of the consumer-facing and administration themes of eversport.tv as well as the front-end for their Single Page App. Before EverSport, I was senior web developer at Flickerbox in San Francisco creating enterprise-level websites.</p>
+  <p><b>The time off:</b> After EverSport folded, I chose to focus on mastering the MERN stack and ditch Drupal and the LAMP stack.</p>`,
   experience: [
     {
       name: 'EverSport Media',
@@ -28,6 +29,7 @@ const resume = {
       endDate: 'Jan, 2017',
       position: [{ title: 'Lead Drupal Front-end Developer' }],
       responsibilities: `Built, maintained, and co-designed the front-end for eversport.tv, an online video platform (OVP). Created and updated EverSport's custom themes and modules using PHP, HTML, JavaScript, and CSS. Rebuilt site and player to be usable on all platforms. Developed and co-designed the CMS admin theme. Designed and developed the user-interface for the embeddable JavaScript-based content player to run on 3rd party sites.`,
+      skillsUsed: '',
       projects: getProjects('EverSport Media')
     },
     {

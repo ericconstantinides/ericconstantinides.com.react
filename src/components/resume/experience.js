@@ -2,20 +2,29 @@ import React from 'react'
 
 const Experience = props => {
   function renderProjects (project) {
+    const title = project.alt_title ? project.alt_title : project.title
+    const tech = project.primary_tech.map(tech => (
+      <span className='project__tech-item'>{tech}</span>
+    ))
     return (
-      <article className='project' key={project.title}>
+      <article className='project' key={title}>
         <div className='project__inner'>
-          <div className='project__image-wrapper'>
-            <img
-              className='project__image'
-              src={'/images/' + project.screenshot}
-              alt=''
-            />
+          <div className='project__primary'>
+            <div className='project__image-wrapper'>
+              <img
+                className='project__image'
+                src={'/images/' + project.screenshot}
+                alt=''
+              />
+            </div>
+            <div className='project__meta'>
+              <h4 className='project__role'>{project.role}</h4>
+              <h3 className='project__title'>{title}</h3>
+            </div>
           </div>
-          <div className='project__meta'>
-            <h4 className='project__role'>{project.role}</h4>
-            <h3 className='project__title'>{project.title}</h3>
-          </div>
+          <p className='project__tech project__meta'>
+            <strong>Primary Tech:</strong> {tech}
+          </p>
         </div>
       </article>
     )
@@ -44,9 +53,9 @@ const Experience = props => {
             </strong>
             {item.position.map(renderPosition)}
           </p>
-          <p>
-            <strong>Responsibilities:</strong> {item.responsibilities}
-          </p>
+          {/* <p> */}
+          {/* <strong>Responsibilities:</strong> {item.responsibilities} */}
+          {/* </p> */}
         </div>
         <div className='projects__container'>
           {item.projects.map(renderProjects)}
