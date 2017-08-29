@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-export default class Header extends Component {
+export default class SiteHeader extends Component {
   render () {
     return (
       <section className='site-header__container valprop valprop--portfolio'>
@@ -9,10 +9,7 @@ export default class Header extends Component {
           <div className='site-container'>
             <nav className='main-nav'>
               <Link to='/' className='main-nav__item'>
-                Home
-              </Link>
-              <Link to='/skills' className='main-nav__item'>
-                Skills
+                Home / Portfolio
               </Link>
               <Link to='/resume' className='main-nav__item'>
                 Résume
@@ -23,7 +20,7 @@ export default class Header extends Component {
                 className='main-nav__item'
                 title='Literally the résumé page saved as a PDF'
               >
-                PDF
+                PDF Résume
               </a>
             </nav>
           </div>

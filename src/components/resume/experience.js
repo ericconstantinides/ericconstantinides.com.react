@@ -3,17 +3,19 @@ import React from 'react'
 const Experience = props => {
   function renderProjects (project) {
     return (
-      <article className='resume-project'>
-        <div className='resume-project__image-wrapper'>
-          <img
-            className='resume-project__image'
-            src={'/images/' + project.screenshot}
-            alt=''
-          />
-        </div>
-        <div className='resume-project__meta'>
-          <h4 className='resume-project__title'>{project.title}</h4>
-          <h4 className='resume-project__role'>{project.role}</h4>
+      <article className='project'>
+        <div className='project__inner'>
+          <div className='project__image-wrapper'>
+            <img
+              className='project__image'
+              src={'/images/' + project.screenshot}
+              alt=''
+            />
+          </div>
+          <div className='project__meta'>
+            <h4 className='project__role'>{project.role}</h4>
+            <h3 className='project__title'>{project.title}</h3>
+          </div>
         </div>
       </article>
     )
@@ -46,7 +48,9 @@ const Experience = props => {
             <strong>Responsibilities:</strong> {item.responsibilities}
           </p>
         </div>
-        {item.projects.map(renderProjects)}
+        <div className='projects__container'>
+          {item.projects.map(renderProjects)}
+        </div>
       </article>
     )
   }

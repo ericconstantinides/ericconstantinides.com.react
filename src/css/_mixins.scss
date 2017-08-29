@@ -21,6 +21,9 @@
 		@media (max-width: #{$bp-small})  { @content; }
 	}
 }
+//---------------------------------------------------------
+// Mixins & Functions
+//---------------------------------------------------------
 
 //---------------------------------------------------------
 // Parse Num: removes any units from the variable
@@ -34,6 +37,7 @@
 @function parse-unit($value) {
 	@return unit($value);
 }
+
 //---------------------------------------------------------
 // Responsive
 //
@@ -42,8 +46,7 @@
 // When the viewport is larger than the default-base-width, the property is the base.
 // When the responsive value equals the $min value, the $min value is used at a calculated breakpoint.
 //---------------------------------------------------------
-@mixin responsive($property, $base, $min:0) {
-	$default-base-width: 1000px !default;
+@mixin responsive($property, $base, $min:0, $default-base-width: 1000px, $important: no) {
 	$default-em-size: 16px !default;
 
 	// strip the units out
@@ -84,17 +87,33 @@
 	// from the base--vw, we can figure out where the min breakpoint will occur:
 	$min-breakpoint: ( $min * $default-em-size ) / ($base--vw / 100 );
 
-	// now we set the responsive value:
-	#{$property}: $base * 1em; // default if < IE9
-	#{$property}: $base--vw * 1vw;
+	@if $important == no {
+		// now we set the responsive value:
+		#{$property}: $base * 1em; // default if < IE9
+		#{$property}: $base--vw * 1vw;
 
-	// on viewports *above* the default-base-width, we "hardcode" the original em value:
-	@media (min-width: (($default-base-width + 1) * 1px) ) {
-		#{$property}: $base * 1rem;
-	}
+		// on viewports *above* the default-base-width, we "hardcode" the original em value:
+		@media only screen and (min-width: (($default-base-width + 1) * 1px) ) {
+			#{$property}: $base * 1rem;
+		}
 
-	// at the calculated min-breakpoint, we use the min em value:
-	@media (max-width: ($min-breakpoint * 1px) ) {
-		#{$property}: $min * 1rem;
+		// at the calculated min-breakpoint, we use the min em value:
+		@media only screen and (max-width: ($min-breakpoint * 1px) ) {
+			#{$property}: $min * 1rem;
+		}
+	} @else {
+		// now we set the responsive value:
+		#{$property}: $base * 1em !important; // default if < IE9
+		#{$property}: $base--vw * 1vw !important;
+
+		// on viewports *above* the default-base-width, we "hardcode" the original em value:
+		@media only screen and (min-width: (($default-base-width + 1) * 1px) ) {
+			#{$property}: $base * 1rem !important;
+		}
+
+		// at the calculated min-breakpoint, we use the min em value:
+		@media only screen and (max-width: ($min-breakpoint * 1px) ) {
+			#{$property}: $min * 1rem !important;
+		}
 	}
 }

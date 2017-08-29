@@ -171,14 +171,14 @@
   },
   {
     "id": "fb_2014_okta-omm",
-    "title": "Okta’s Mobility Management Animation",
+    "title": "Okta Animation",
     "employer": "Flickerbox, Inc",
     "date": "2014",
     "website": "okta.com/product/mobility-management/",
     "active": false,
     "role": "Lead Animation Developer",
     "description":
-      "An 11-page animated story to help visually explain a product. <a href='ericconstantinides.github.io/scrolling-story/'><strong>Demo on GitHub</strong></a>",
+      "An 11-page animated story to help visually explain a product.",
     "screenshot": "portfolio--okta-scrolling-story--md.jpg",
     "technologies": [
       "Drupal",

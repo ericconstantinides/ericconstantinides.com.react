@@ -189,7 +189,22 @@ section.header {
   }
 }
 .social-links {
+  display: flex;
   margin-top: 1em;
+  justify-content: center;
+}
+.social-link {
+  display: block;
+  width: 29px;
+  height: 29px;
+  background-size: contain;
+  margin: 0 0.25rem;
+}
+.social-link__github {
+  background-image: url(/images/logo--github.png);
+}
+.social-link__linkedin {
+  background-image: url(/images/logo--linkedin.png);
 }
 .social-logo {
   width: 29px;
@@ -443,6 +458,89 @@ section.header {
   &:last-child {
     margin-right: 0;
   }
+}
+//?????????????????????????????????????????????????????????????????????
+// Project
+//?????????????????????????????????????????????????????????????????????
+.projects__container {
+  display: flex;
+  flex-flow: wrap;
+  // justify-content: center;
+  margin: 0 0 -0.625rem -0.625rem;
+}
+.project {
+  display: flex;
+  margin-top: 0;
+  width: 25%;
+}
+.project__inner {
+  display: flex;
+  flex: 1;
+  background: whitesmoke;
+  margin: 0 0 0.625rem 0.625rem;
+  box-shadow: 1px 1px rgba(black, 0.125);
+}
+.project__meta {
+  padding: 0.5rem;
+}
+.project__image-wrapper {
+  flex: 0 0 auto;
+  @include responsive(width, 70px, 70px, 800);
+  // width: 120px;
+}
+.project__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project__role {
+  margin: 0;
+  font-size: 0.7rem;
+  line-height: 1;
+  margin-bottom: 0.35em;
+}
+.project__title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+@media (max-width: $bp-xl) {
+  .project {
+    width: 33.33%;
+  }
+}
+@media (max-width: $bp-medium) {
+  .project {
+    width: 50%;
+  }
+}
+@media (max-width: $bp-small) {
+  .project {
+    width: 100%;
+  }
+  .project__image-wrapper {
+    width: 60px;
+    object-fit: none;
+    // height: (70px * 9/16);
+  }
+}
+@media print {
+  .project {
+    width: 33.33%;
+  }
+  .project__inner {
+     box-shadow: none;
+  }
+  .project__image-wrapper {
+    height: 32px;
+    width: 60px;
+  }
+  .project__meta {
+    padding: 0 0.5rem 0.25rem;
+  }
+  .project__title {font-size: 0.875rem;}
+  .project__role {font-size: 0.625rem;}
 }
 
 //------------------------------------------------------------------------------
