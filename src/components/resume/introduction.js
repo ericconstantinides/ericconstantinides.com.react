@@ -1,8 +1,9 @@
 import React from 'react'
 
-const Introduction = (props) => {
+const Introduction = props => {
   return (
-    <section dangerouslySetInnerHTML={{ __html: props.introduction }}
+    <section
+      dangerouslySetInnerHTML={{ __html: props.introduction }}
       className='introduction'
     />
   )

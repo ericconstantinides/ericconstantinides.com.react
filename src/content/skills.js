@@ -171,11 +171,6 @@ const skills = [
     type: 'front-end'
   },
   {
-    skill: 'Drupal Module Development',
-    yearStarted: '2017',
-    type: 'back-end'
-  },
-  {
     skill: 'WordPress Theming',
     yearStarted: '2015',
     type: 'front-end'
@@ -226,6 +221,11 @@ const skills = [
   {
     skill: 'Sublime Text',
     yearStarted: '2013',
+    type: 'tools'
+  },
+  {
+    skill: 'Visual Studio Code',
+    yearStarted: '2017',
     type: 'tools'
   },
   {
