@@ -6,7 +6,7 @@ const Introduction = props => {
       <h2>Intro</h2>
       <div
         dangerouslySetInnerHTML={{ __html: props.introduction }}
-        className='introduction'
+        className='introduction u-kill-last-margin'
       />
     </section>
   )

@@ -239,6 +239,11 @@
 //---------------------------------------------------------
 .u-show { display: block }
 .u-hide { display: none }
+.u-hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
 
 //---------------------------------------------------------
 // Responsive Stuffs
@@ -415,4 +420,3 @@
 		list-style-type: none;
 	}
 }
-

@@ -400,6 +400,7 @@ h2 {
 h3 {
   font-size: 1.75em;
   font-size: 2.8vw;
+  font-size: 1.75em;
   font-weight: 300;
   margin: 0 0 0.4em;
 }
@@ -408,9 +409,9 @@ h3 {
     font-size: 1.75rem;
   }
 }
-@media only screen and (max-width: 785.71429px) {
+@media only screen and (max-width: 885.71429px) {
   h3 {
-    font-size: 1.375rem;
+    font-size: 1.55rem;
   }
 }
 
@@ -470,32 +471,6 @@ h4 {
 }
 .position-group > *:first-child {
   font-weight: bold;
-}
-
-.full-across {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 1.5em;
-}
-.full-across > * {
-  margin: 0;
-}
-
-.position {
-  font-style: italic;
-}
-
-article {
-  margin-top: 2em;
-}
-article:first-child {
-  margin-top: 0;
-}
-
-.location {
-  font-weight: normal;
 }
 
 .home-header {
@@ -602,7 +577,7 @@ section.header .inner-copy {
   width: 29px;
   height: 29px;
   background-size: contain;
-  margin: 0 0.25rem;
+  margin: 0 0.5rem;
 }
 
 .social-link__github {
@@ -1039,7 +1014,7 @@ section.header .inner-copy {
 .projects__container {
   display: flex;
   flex-flow: wrap;
-  margin: 0 0 -0.625rem -0.625rem;
+  margin: 0 0 -1.5em -2em;
 }
 
 .project {
@@ -1051,76 +1026,73 @@ section.header .inner-copy {
 
 .project__inner {
   flex: 1;
-  margin: 0 0 0.625rem 0.625rem;
-  border: 1px solid #ddd;
+  margin: 0 0 1.5em 2em;
 }
 
 .project__primary {
-  background: whitesmoke;
-  border-bottom: 1px solid #eee;
   display: flex;
+  height: 2.5em;
 }
 
 .project__meta {
-  margin: 0;
-  padding: 0.5rem;
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px solid #dddddd;
+  margin: 0 0 0 0.65em;
+  padding: 0.25em 0;
 }
 
 .project__image-wrapper {
   flex: 0 0 auto;
-  width: 4.375em;
-  width: 8.75vw;
-}
-@media only screen and (min-width: 801px) {
-  .project__image-wrapper {
-    width: 4.375rem;
-  }
-}
-@media only screen and (max-width: 800px) {
-  .project__image-wrapper {
-    width: 4.375rem;
-  }
+  width: 56px;
 }
 
 .project__image {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border: 1px solid #ddd;
 }
 
 .project__role {
   margin: 0;
-  font-size: 0.7rem;
+  font-size: 0.7em;
   line-height: 1;
   margin-bottom: 0.35em;
 }
 
 .project__title {
-  font-size: 1.125rem;
+  font-size: 1.35em;
   font-weight: 500;
   line-height: 1;
   margin-bottom: 0;
 }
 
-.project__tech {
-  font-size: 0.75rem;
+.project__sub {
+  font-size: 0.9em;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0.5em 0 0;
 }
 
-.project__tech-item:before {
+.project__sub-item:before {
   content: ', ';
 }
 
-.project__tech-item:first-of-type:before {
+.project__sub-item:first-of-type:before {
   content: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
   .project {
     width: 33.33%;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 600px) {
   .project {
     width: 50%;
   }
@@ -1137,23 +1109,52 @@ section.header .inner-copy {
 }
 
 @media print {
+  .projects__container {
+    font-size: 0.75em;
+  }
   .project {
     width: 33.33%;
   }
-  .project__image-wrapper {
-    height: 32px;
-    width: 60px;
-  }
-  .project__primary {
-    background: whitesmoke;
-    -webkit-print-color-adjust: exact;
-  }
   .project__title {
-    font-size: 0.875rem;
+    font-size: 1.25em;
   }
-  .project__role {
-    font-size: 0.625rem;
-  }
+}
+
+.job {
+  padding-bottom: 3em;
+}
+
+.job__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1em;
+}
+
+.job__title {
+  margin-bottom: 0;
+}
+
+.job__subtitle {
+  font-size: 0.6em;
+}
+
+.job__header-location {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.job__position {
+  margin-bottom: 1em;
+}
+
+.job__header-date {
+  font-family: 'Oswald', sans-serif;
+}
+
+.job__position-meta {
+  font-size: 0.85em;
 }
 
 .main-nav__container {
@@ -1267,9 +1268,6 @@ section.header .inner-copy {
     margin-top: 0;
     margin-bottom: 1em;
   }
-  article {
-    margin-top: 0.5em;
-  }
   .columnize .column {
     float: none !important;
     width: 100% !important;
@@ -1339,9 +1337,6 @@ section.header .inner-copy {
   .main-nav__container {
     display: none !important;
   }
-  body {
-    font-size: 89%;
-  }
   p,
   li {
     font-size: 0.825em;
@@ -1390,12 +1385,6 @@ section.header .inner-copy {
   h1 {
     font-size: 2.75em;
     margin-bottom: 0.5em;
-  }
-  h2 {
-    border-bottom: 1px solid black;
-  }
-  article {
-    margin-top: 1em;
   }
   .site-section {
     margin-bottom: 0;
@@ -2118,6 +2107,12 @@ section.header .inner-copy {
 
 .u-hide {
   display: none;
+}
+
+.u-hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .u-xl-show {

@@ -4,10 +4,12 @@ const Experience = props => {
   function renderProjects (project) {
     const title = project.alt_title ? project.alt_title : project.title
     const tech = project.primary_tech.map(tech => (
-      <span className='project__tech-item'>{tech}</span>
+      <span key={tech} className='project__sub-item'>
+        {tech}
+      </span>
     ))
     return (
-      <article className='project' key={title}>
+      <article className='project' key={project.id}>
         <div className='project__inner'>
           <div className='project__primary'>
             <div className='project__image-wrapper'>
@@ -18,11 +20,12 @@ const Experience = props => {
               />
             </div>
             <div className='project__meta'>
-              <h4 className='project__role'>{project.role}</h4>
               <h3 className='project__title'>{title}</h3>
             </div>
           </div>
-          <p className='project__tech project__meta'>
+          <p className='project__sub'>
+            <strong>Role:</strong> {project.role}
+            <br />
             <strong>Primary Tech:</strong> {tech}
           </p>
         </div>
@@ -30,39 +33,60 @@ const Experience = props => {
     )
   }
   function renderPosition (position) {
+    const meta = position.meta ? (
+      <span className='job__position-meta'> ({position.meta})</span>
+    ) : (
+      ''
+    )
     return (
-      <div className='position' key={position.title}>
-        <strong>{position.title}</strong> {position.meta}
+      <div className='job__position' key={position.title}>
+        <p>
+          <strong>
+            {position.title}
+            {meta}:
+          </strong>{' '}
+          {position.info}
+        </p>
       </div>
     )
   }
   function renderExperienceItems (item) {
+    const date = item.startDate
+      ? item.startDate + (item.endDate ? ' - ' + item.endDate : '')
+      : ''
     return (
-      <article
-        key={item.name}
-        className='xxxprint-page-break-after xxxprint-dont-break'
-      >
+      <article key={item.name} className='job'>
         <div className='print-avoid-break'>
-          <div className='full-across'>
-            <h3>{item.name}</h3>
-            <p className='subhead'>{item.location}</p>
-          </div>
-          <p>
-            <strong>
-              {item.startDate} - {item.endDate}
-            </strong>
-            {item.position.map(renderPosition)}
-          </p>
+          <header className='job__header'>
+            <div className='job__header-left'>
+              <h3 className='job__title'>
+                {item.name}
+                <div className='job__subtitle'>
+                  {item.description} in{' '}
+                  <span className='job__header-location'>{item.location}</span>
+                </div>
+              </h3>
+            </div>
+            <div className='job__header-right'>
+              <div className='job__header-date'>{date}</div>
+            </div>
+          </header>
+          {item.position.map(renderPosition)}
           {/* <p> */}
-          {/* <strong>Responsibilities:</strong> {item.responsibilities} */}
+          {/* <strong>{item.position[0].title}:</strong> {item.responsibilities} */}
           {/* </p> */}
         </div>
-        <div className='projects__container'>
+        <div className='projects__container print-avoid-break'>
           {item.projects.map(renderProjects)}
         </div>
       </article>
     )
   }
-  return <div>{props.items.map(renderExperienceItems)}</div>
+  return (
+    <section className='site-section'>
+      <h2>Experience</h2>
+      {props.items.map(renderExperienceItems)}
+    </section>
+  )
 }
 export default Experience

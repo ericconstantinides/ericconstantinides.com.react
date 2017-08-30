@@ -23,7 +23,7 @@ const Header = props => {
             <li>{props.phone}</li>
             <li className='social-links'>
               <a
-                className='social-link social-link__github'
+                className='social-link social-link__github u-hide-text'
                 href={`//github.com/${props.github}`}
                 title='GitHub'
                 target='_blank'
@@ -32,7 +32,7 @@ const Header = props => {
                 Github
               </a>
               <a
-                className='social-link social-link__linkedin'
+                className='social-link social-link__linkedin u-hide-text'
                 href={`//linkedin.com/in/${props.linkedin}`}
                 title='LinkedIn'
                 target='_blank'

@@ -24,11 +24,11 @@ const projects = [
     description:
       'EverSport is the live streaming sports destination and media platform built for fans and content rights holders.',
     screenshot: 'portfolio--eversport--md.jpg',
-    primary_tech: ['Drupal', 'JavaScript', 'CSS/Sass', 'PHP']
+    primary_tech: ['Drupal', 'JavaScript', 'Sass', 'PHP']
   },
   {
     id: 'evr_2017_embed',
-    title: "EverSport's Single Page App",
+    title: 'EverSport’s Single Page App',
     alt_title: 'Single Page App',
     employer: 'EverSport Media',
     date: '2015-2017',
@@ -36,23 +36,23 @@ const projects = [
     active: true,
     role: 'Lead Interactivity Developer | Co-Designer',
     description:
-      "Eversport's Single Page App is a responsive and embeddable JavaScript player for distributing EverSport's content on third-party websites.",
+      'Eversport’s Single Page App is a responsive and embeddable JavaScript player for distributing EverSport’s content on third-party websites.',
     screenshot: 'portfolio--eversport-embed--md.jpg',
-    primary_tech: ['JavaScript', 'JSON', 'Sass/CSS']
+    primary_tech: ['JavaScript', 'JSON', 'Sass']
   },
   {
     id: 'evr_2016_crms',
-    title: "EverSport's Administration Theme",
+    title: 'EverSport’s Administration Theme',
     alt_title: 'Admin Theme',
     employer: 'EverSport Media',
     date: '2015-2017',
     website: 'eversport.tv/admin',
     active: false,
-    role: 'Lead Admin Theme Developer | Co-Designer',
+    role: 'Lead Theme Developer | Co-Designer',
     description:
       'EverSport\'s custom "Content Rights Management System (CRMS)" for managing rights and distrubution.',
     screenshot: 'portfolio--eversport-crms--md.jpg',
-    primary_tech: ['Drupal', 'JavaScript', 'CSS/Sass', 'PHP']
+    primary_tech: ['Drupal', 'JavaScript', 'Sass', 'PHP']
   },
   {
     id: 'ec_2016_annachich',
@@ -65,7 +65,7 @@ const projects = [
     description:
       'Annachich is a luxury designer jewelry line inspired by architecture. The site is built on Drupal 7 and Drupal Commerce.',
     screenshot: 'portfolio--annachich--md.jpg',
-    primary_tech: ['Drupal', 'Drupal Commerce', 'JavaScript', 'CSS/Sass']
+    primary_tech: ['Drupal Commerce', 'JavaScript', 'Sass']
   },
   {
     id: 'ec_2015_paoloshoes',
@@ -78,7 +78,7 @@ const projects = [
     description:
       'Paolo Shoes is a Shoe Brand out of San Francisco, CA. The site is built on Drupal 6 and Ubercart.',
     screenshot: 'portfolio--paoloshoes3--md.jpg',
-    primary_tech: ['Drupal', 'UberCart', 'JavaScript', 'CSS/Sass']
+    primary_tech: ['Drupal', 'UberCart', 'JavaScript', 'Sass']
   },
   {
     id: 'fb_2015_pure-storage',
@@ -91,7 +91,7 @@ const projects = [
     description:
       'Pure Storage is a Mountain View, California-based enterprise data flash storage company.',
     screenshot: 'portfolio--purestorage--md.jpg',
-    primary_tech: ['Static HTML', 'JavaScript', 'CSS/Sass']
+    primary_tech: ['Static HTML', 'JavaScript', 'Sass']
   },
   {
     id: 'fb_2015_adallom',
@@ -103,7 +103,7 @@ const projects = [
     role: 'Lead Developer',
     description: 'Adallom is a cloud security company acquired by MicroSoft.',
     screenshot: 'portfolio--adallom--md.jpg',
-    primary_tech: ['WordPress', 'JavaScript', 'CSS/Sass']
+    primary_tech: ['WordPress', 'JavaScript', 'Sass']
   },
   {
     id: 'fb_2014_okta-omm',
@@ -117,7 +117,7 @@ const projects = [
     description:
       'An 11-page animated story to help visually explain a product.',
     screenshot: 'portfolio--okta-scrolling-story--md.jpg',
-    primary_tech: ['JavaScript', 'CSS/Sass']
+    primary_tech: ['JavaScript', 'Sass']
   },
   {
     id: 'fb_2014_platfora',
@@ -130,7 +130,7 @@ const projects = [
     description:
       'Platfora, Inc. is a big data analytics company based in San Mateo, California.',
     screenshot: 'portfolio--platfora--md.jpg',
-    primary_tech: ['WordPress', 'JavaScript', 'CSS/Sass']
+    primary_tech: ['WordPress', 'JavaScript', 'Sass']
   },
   {
     id: 'fb_2014_alteryx',
@@ -143,7 +143,7 @@ const projects = [
     description:
       'Alteryx is a data blending and advanced data analytics software company based out of Irvine, California.',
     screenshot: 'portfolio--alteryx--md.jpg',
-    primary_tech: ['Drupal', 'JavaScript', 'CSS/Sass']
+    primary_tech: ['Drupal', 'JavaScript', 'Sass']
   },
   {
     id: 'fb_2014_okta',
@@ -156,7 +156,7 @@ const projects = [
     description:
       'Okta is an enterprise-grade, identity management service based out of San Francisco, California.',
     screenshot: 'portfolio--okta--md.jpg',
-    primary_tech: ['PHP', 'JavaScript', 'WordPress', 'CSS/Sass']
+    primary_tech: ['PHP', 'JavaScript', 'WordPress', 'Sass']
   },
   {
     id: 'fb_2013_abaxis-veterinary',
@@ -169,7 +169,7 @@ const projects = [
     description:
       'Abaxis provides leading edge veterinary technology, tools and services.',
     screenshot: 'portfolio--abaxis-veterinary--md.jpg',
-    primary_tech: ['Drupal', 'JavaScript', 'CSS/Sass']
+    primary_tech: ['Drupal', 'JavaScript', 'Sass']
   },
   {
     id: 'fb_2013_socialchorus',
@@ -182,7 +182,7 @@ const projects = [
     description:
       'SocialChorus, Inc. provides advocate marketing solutions for brands.',
     screenshot: 'portfolio--socialchorus--md.jpg',
-    primary_tech: ['WordPress', 'JavaScript', 'CSS/Sass']
+    primary_tech: ['WordPress', 'JavaScript', 'Sass']
   },
   {
     id: 'fb_2013_pentaho',
@@ -194,7 +194,7 @@ const projects = [
     role: 'Lead Drupal Developer',
     description: 'Pentaho is a Business Intelligence (BI) software company.',
     screenshot: 'portfolio--pentaho--md.jpg',
-    primary_tech: ['Drupal', 'JavaScript', 'CSS/Sass']
+    primary_tech: ['Drupal', 'JavaScript', 'Sass']
   },
   {
     id: 'fb_2012_liveops',
@@ -207,7 +207,7 @@ const projects = [
     description:
       'LiveOps is a cloud call center company based in Scottsdale, Arizona.',
     screenshot: 'portfolio--liveops--md.jpg',
-    primary_tech: ['Drupal', 'JavaScript', 'CSS/Sass']
+    primary_tech: ['Drupal', 'JavaScript', 'Sass']
   },
   {
     id: 'fb_2012_island',
@@ -221,7 +221,7 @@ const projects = [
     description:
       'Island Resort and Casino is an Indian Casino based in Harris, Michigan.',
     screenshot: 'portfolio--islandresortandcasino--md.jpg',
-    primary_tech: ['Drupal', 'JavaScript', 'CSS/Sass']
+    primary_tech: ['Drupal', 'JavaScript', 'Sass']
   },
   {
     id: 'ec_2016_cameron-vail',
@@ -234,7 +234,7 @@ const projects = [
     description:
       'Cameron Vail Design is a single page portfolio website built on Drupal 7.',
     screenshot: 'portfolio--cameronvaildesign--md.jpg',
-    primary_tech: ['Drupal', 'JavaScript', 'CSS/Sass']
+    primary_tech: ['Drupal', 'JavaScript', 'Sass']
   },
   {
     id: 'ec_2012_annachich',
