@@ -75,7 +75,7 @@ p {
   margin: 0 0 1em;
 }
 p, li {
-  @include responsive(font-size,1.125,0.9);
+  font-size: 1rem;
 }
 li {
   margin: 0;
@@ -381,7 +381,7 @@ section.header {
 //—————————————————————————————————————————————————————————————————————
 // Skills
 //—————————————————————————————————————————————————————————————————————
-.skills {
+/* .skills {
   display: block;
   text-align: left;
 }
@@ -401,7 +401,7 @@ section.header {
   &[data-type="tools"] { background: #e4dfc9 }
   &[data-type="design"] { background: #e0d2d2 }
   &[data-type="back-end"] { background: #d8dce8 }
-  &[data-type="front-end"] { background: #c1ccc4 }
+  &[data-type="front-end"] { background: #c1ddd4 }
   &:hover {
     transform: scale(1.05);
     cursor: default;
@@ -424,7 +424,7 @@ section.header {
 }
 .skills__name {
   font-weight: bold;
-}
+} */
 .checkbox__container {
   display: flex;
 }
@@ -445,7 +445,7 @@ section.header {
 .projects__container {
   display: flex;
   flex-flow: wrap;
-  margin: 0 0 -1.5em -2em;
+  margin: 0 0 -1.25em -2em;
 }
 .project {
   display: flex;
@@ -453,55 +453,27 @@ section.header {
   width: 25%;
   flex-flow: column;
 }
+.project--skinny {
+  width: (100% / 6);
+}
 .project__inner {
   flex: 1;
-  margin: 0 0 1.5em 2em;
-}
-.project__primary {
-  display: flex;
-  height: 2.5em;
-}
-.project__meta {
-  align-self: stretch;
-  flex: 1;
-  display: flex;
-  align-items: flex-end;
-  border-bottom: 1px solid #dddddd;
-  margin: 0 0 0 0.65em;
-  padding: 0.25em 0;
-}
-.project__image-wrapper {
-  flex: 0 0 auto;
-  width: 56px;
-  // width: 120px;
-}
-.project__image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border: 1px solid #ddd;
-}
-.project__role {
-  margin: 0;
-  font-size: 0.7em;
-  line-height: 1;
-  margin-bottom: 0.35em;
+  margin: 0 0 1.25em 2em;
 }
 .project__title {
+  border-bottom: 1px solid #ddd;
   font-size: 1.35em;
-  font-weight: 500;
   line-height: 1;
   margin-bottom: 0;
 }
-.project__sub {
+.project__meta {
   // @include responsive(font-size, 1.0, 0.9);
   font-size: 0.9em;
   line-height: 1.2;
   margin: 0;
   padding: 0.5em 0 0;
 }
-.project__sub-item {
+.project__meta-item {
   &:before {
     content: ", ";
   }
@@ -509,19 +481,33 @@ section.header {
     content: none;
   }
 }
+@media only screen and (max-width: $bp-large) {
+  .project--skinny {
+    width: (100% / 5);
+  }  
+}
 @media (max-width: $bp-medium-large) {
   .project {
     width: 33.33%;
+  }
+  .project--skinny {
+    width: (100% / 4);
   }
 }
 @media (max-width: $bp-medium-small) {
   .project {
     width: 50%;
   }
+  .project--skinny {
+    width: (100% / 3);
+  }
 }
 @media (max-width: $bp-small) {
   .project {
     width: 100%;
+  }
+  .project--skinny {
+    width: (100% / 2);
   }
   .project__image-wrapper {
     width: 70px;
@@ -534,15 +520,15 @@ section.header {
     font-size: 0.75em;
   }
   .project {
-    width: 33.33%;
+    width: 20%;
   }
   .project__title {
     font-size: 1.25em;
   }
 }
-//—————————————————————————————————————————————————————————————————————
+//-----------------------------------------------------------------------------
 // Job
-//—————————————————————————————————————————————————————————————————————
+//-----------------------------------------------------------------------------
 .job {
   padding-bottom: 3em;
 }
@@ -573,6 +559,43 @@ section.header {
 .job__position-meta {
   font-size: 0.85em;
 }
+
+// Skills
+// .skill__type-container-title {
+//   border-bottom: 1px solid #ddd;
+//   margin-bottom: 1em;
+// }
+// .skill__item,
+// .skill__list {
+//   padding: 0;
+//   margin: 0;
+// }
+// .skill__item {
+//   list-style-type: none;
+// }
+// .skill__list--type {
+//   display: flex;
+//   flex-flow: wrap;
+//   justify-content: space-between;
+//   margin-left: -1rem;
+//   margin-bottom: 1em
+// }
+// .skill__item--type {
+//   // width: 20%;
+//   // flex: 1;
+//   margin-left: 1rem;
+//   margin-bottom: 1em;
+//   // min-width: 100px;
+// }
+// .skill__type-title {
+//   margin: 0;
+//   font-weight: bold;
+//   text-transform: none;
+//   border-bottom: 1px solid #ddd;
+// }
+// .skill__item--subskill {
+//   font-size: 0.75em;
+// }
 
 //------------------------------------------------------------------------------
 // Main Nav

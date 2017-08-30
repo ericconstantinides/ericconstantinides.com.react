@@ -2,6 +2,7 @@ const projects = [
   {
     id: 'ec_2017_constantly-being',
     title: 'Constantly Being',
+    alt_title: 'ConstantlyBeing.com',
     employer: 'Eric Constantinides',
     date: '2017',
     website: 'www.constantlybeing.com',
@@ -57,11 +58,12 @@ const projects = [
   {
     id: 'ec_2016_annachich',
     title: 'Annachich Jewelry',
+    alt_title: 'Annachich.com',
     employer: 'Eric Constantinides',
     date: '2016',
     website: 'www.annachich.com',
     active: true,
-    role: 'Lead Drupal Developer | Co-Designer',
+    role: 'Lead Developer | Co-Designer',
     description:
       'Annachich is a luxury designer jewelry line inspired by architecture. The site is built on Drupal 7 and Drupal Commerce.',
     screenshot: 'portfolio--annachich--md.jpg',
@@ -70,11 +72,12 @@ const projects = [
   {
     id: 'ec_2015_paoloshoes',
     title: 'Paolo Shoes',
+    alt_title: 'PaoloShoes.com',
     employer: 'Eric Constantinides',
     date: '2015',
     website: 'www.paoloshoes.com',
     active: true,
-    role: 'Lead Drupal Developer | Co-Designer',
+    role: 'Lead Developer | Co-Designer',
     description:
       'Paolo Shoes is a Shoe Brand out of San Francisco, CA. The site is built on Drupal 6 and Ubercart.',
     screenshot: 'portfolio--paoloshoes3--md.jpg',
@@ -83,6 +86,7 @@ const projects = [
   {
     id: 'fb_2015_pure-storage',
     title: 'Pure Storage',
+    alt_title: 'PureStorage.com',
     employer: 'Flickerbox, Inc',
     date: '2015',
     website: 'purestorage.com',
@@ -96,6 +100,7 @@ const projects = [
   {
     id: 'fb_2015_adallom',
     title: 'Adallom',
+    alt_title: 'Adallom.com',
     employer: 'Flickerbox, Inc',
     date: '2015',
     website: 'adallom.com',
@@ -105,7 +110,7 @@ const projects = [
     screenshot: 'portfolio--adallom--md.jpg',
     primary_tech: ['WordPress', 'JavaScript', 'Sass']
   },
-  {
+  /* {
     id: 'fb_2014_okta-omm',
     title: 'Okta Mobility Management Animation',
     alt_title: 'Okta Animation',
@@ -118,10 +123,11 @@ const projects = [
       'An 11-page animated story to help visually explain a product.',
     screenshot: 'portfolio--okta-scrolling-story--md.jpg',
     primary_tech: ['JavaScript', 'Sass']
-  },
+  }, */
   {
     id: 'fb_2014_platfora',
     title: 'Platfora',
+    alt_title: 'Platfora.com',
     employer: 'Flickerbox, Inc',
     date: '2014',
     website: 'platfora.com',
@@ -135,11 +141,12 @@ const projects = [
   {
     id: 'fb_2014_alteryx',
     title: 'Alteryx',
+    alt_title: 'Alteryx.com',
     employer: 'Flickerbox, Inc',
     date: '2014',
     website: 'www.alteryx.com',
     active: true,
-    role: 'Lead Drupal Developer',
+    role: 'Lead Developer',
     description:
       'Alteryx is a data blending and advanced data analytics software company based out of Irvine, California.',
     screenshot: 'portfolio--alteryx--md.jpg',
@@ -148,6 +155,7 @@ const projects = [
   {
     id: 'fb_2014_okta',
     title: 'Okta',
+    alt_title: 'Okta.com',
     employer: 'Flickerbox, Inc',
     date: '2014',
     website: 'okta.com',
@@ -161,6 +169,7 @@ const projects = [
   {
     id: 'fb_2013_abaxis-veterinary',
     title: 'Abaxis Veterinary',
+    alt_title: 'Abaxis.com/veterinary',
     employer: 'Flickerbox, Inc',
     date: '2013',
     website: 'abaxis.com/veterinary/',
@@ -174,6 +183,7 @@ const projects = [
   {
     id: 'fb_2013_socialchorus',
     title: 'SocialChorus',
+    alt_title: 'SocialChorus.com',
     employer: 'Flickerbox, Inc',
     date: '2013',
     website: 'socialchorus.com',
@@ -187,11 +197,12 @@ const projects = [
   {
     id: 'fb_2013_pentaho',
     title: 'Pentaho',
+    alt_title: 'Pentaho.com',
     employer: 'Flickerbox, Inc',
     date: '2013',
     website: 'pentaho.com',
     active: false,
-    role: 'Lead Drupal Developer',
+    role: 'Lead Developer',
     description: 'Pentaho is a Business Intelligence (BI) software company.',
     screenshot: 'portfolio--pentaho--md.jpg',
     primary_tech: ['Drupal', 'JavaScript', 'Sass']
@@ -199,11 +210,12 @@ const projects = [
   {
     id: 'fb_2012_liveops',
     title: 'LiveOps',
+    alt_title: 'LiveOps.com',
     employer: 'Flickerbox, Inc',
     date: '2012',
     website: 'liveops.com',
     active: false,
-    role: 'Lead Drupal Developer',
+    role: 'Lead Developer',
     description:
       'LiveOps is a cloud call center company based in Scottsdale, Arizona.',
     screenshot: 'portfolio--liveops--md.jpg',
@@ -212,12 +224,12 @@ const projects = [
   {
     id: 'fb_2012_island',
     title: 'Island Resort & Casino',
-    alt_title: 'Island Resort',
+    alt_title: 'IslandResort.com',
     employer: 'Flickerbox, Inc',
     date: '2012',
     website: 'www.islandresortandcasino.com',
     active: true,
-    role: 'Lead Drupal Developer',
+    role: 'Lead Developer',
     description:
       'Island Resort and Casino is an Indian Casino based in Harris, Michigan.',
     screenshot: 'portfolio--islandresortandcasino--md.jpg',
@@ -226,37 +238,40 @@ const projects = [
   {
     id: 'ec_2016_cameron-vail',
     title: 'Cameron Vail Design',
+    alt_title: 'CameronVail.com',
     employer: 'Eric Constantinides',
     date: '2016',
     website: 'www.cameronvaildesign.com',
     active: true,
-    role: 'Lead Drupal Developer',
+    role: 'Lead Developer',
     description:
       'Cameron Vail Design is a single page portfolio website built on Drupal 7.',
     screenshot: 'portfolio--cameronvaildesign--md.jpg',
     primary_tech: ['Drupal', 'JavaScript', 'Sass']
   },
-  {
+  /*   {
     id: 'ec_2012_annachich',
     title: 'Annachich Jewelry',
+    alt_title: 'Annachich.com',
     employer: 'Eric Constantinides',
     date: '2012',
     website: 'annachich.com',
     active: false,
-    role: 'Lead Drupal Developer',
+    role: 'Lead Developer',
     description:
       'Annachich is a luxury designer jewelry line inspired by architecture. The site is built on Drupal 6 and Ubercart.',
     screenshot: 'portfolio--annachich-v1--md.jpg',
     primary_tech: ['Drupal', 'Ubercart', 'CSS']
-  },
+  }, */
   {
     id: 'ec_2011_dukeduchess',
     title: 'Duke et Duchess',
+    alt_title: 'DukeDuchess.com',
     employer: 'Eric Constantinides',
     date: '2011',
     website: 'dukeduchess.com',
     active: false,
-    role: 'Lead Drupal Developer',
+    role: 'Lead Developer',
     description:
       'Duke et Duchess is a clothing store based in San Francisco, California. The site is built on Drupal 6 and Ubercart.',
     screenshot: 'portfolio--dukeduchess--md.jpg',
@@ -265,11 +280,12 @@ const projects = [
   {
     id: 'ec_2011_btwd',
     title: 'Bike to Work Day',
+    alt_title: 'YouCanBikeThere.com',
     employer: 'Eric Constantinides',
     date: '2011',
     website: 'youcanbikethere.com',
     active: false,
-    role: 'Lead Drupal Developer',
+    role: 'Lead Developer',
     description:
       'Bike to Work Day is an annual event held on various days in the Spring across the United States and Canada that promotes the bicycle as an option for commuting to work.',
     screenshot: 'portfolio--youcanbikethere--md.jpg',
@@ -278,11 +294,12 @@ const projects = [
   {
     id: 'ec_2011_bottomlessbrunch',
     title: 'Bottomless Brunch',
+    alt_title: 'BottomlessBrunch.com',
     employer: 'Eric Constantinides',
     date: '2011',
     website: 'bottomlessbrunch.com',
     active: false,
-    role: 'Lead Drupal Developer',
+    role: 'Lead Developer',
     description:
       'Bottomless Brunch is THE go to place to find out exactly where to get bottomless mimosas for not a lot of money.',
     screenshot: 'portfolio--bottomlessbrunch--md.jpg',
@@ -291,12 +308,12 @@ const projects = [
   {
     id: 'ec_2010_chicfashionweek',
     title: 'Chic Fashion Week SF',
-    alt_title: 'Chic Fashion Week',
+    alt_title: 'ChicFashion.com',
     employer: 'Eric Constantinides',
     date: '2010',
     website: 'chicfashionweeksf.com',
     active: false,
-    role: 'Lead Drupal Developer',
+    role: 'Lead Developer',
     description: 'Awarded best technical website in 2010 by eFashionBlog SF.',
     screenshot: 'portfolio--chicfashionweeksf--md.jpg',
     primary_tech: ['Drupal', 'CSS']
@@ -304,11 +321,12 @@ const projects = [
   {
     id: 'ec_2008_babc',
     title: 'Bay Area Bicycle Coalition',
+    alt_title: 'BayAreaBikes.org',
     employer: 'Eric Constantinides',
     date: '2008',
     website: 'bayareabikes.org',
     active: false,
-    role: 'Lead Drupal Developer | Lead Designer',
+    role: 'Lead Developer | Lead Designer',
     description:
       'The Bay Area Bicycle Coalition promotes safe and enjoyable bicycling for everyday transportation in the San Francisco Bay Area.',
     screenshot: 'portfolio--bayareabikes--md.jpg',
@@ -317,6 +335,7 @@ const projects = [
   {
     id: 'ec_2005_sfima',
     title: 'SFIMA',
+    alt_title: 'SFIMA.org',
     employer: 'Eric Constantinides',
     date: '2005',
     website: 'sfima.org',

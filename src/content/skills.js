@@ -3,35 +3,35 @@
 const skills = [
   {
     type: 'passionate',
-    human: "Skills I'm deeply passionate about!",
+    human: 'My Passion Skills',
     skills: [
       {
         skill: 'React',
-        subSkills: ['JSX', 'Redux'],
+        subSkills: ['JSX', 'Redux', 'Create-React-App'],
         yearStarted: '2017',
         type: 'front-end'
       },
       {
         skill: 'JavaScript',
-        subSkills: ['AJAX', 'JSON', 'ES2015', 'ES6', 'ES7'],
+        subSkills: ['AJAX', 'JSON', 'ES2015 / ES6'],
         yearStarted: '2014',
         type: 'front-end'
       },
       {
         skill: 'Node',
-        subSkills: ['Express', 'mongoDB', 'npm', 'yarn'],
+        subSkills: ['Express', 'mongoDB', 'npm / yarn'],
         yearStarted: '2017',
         type: 'back-end'
       },
       {
         skill: 'Build Tools',
-        subSkills: ['Gulp', 'Webpack', 'Create-React-App', 'Babel'],
+        subSkills: ['Gulp', 'Webpack', 'Babel'],
         yearStarted: '2015',
         type: 'front-end'
       },
       {
         skill: 'CSS',
-        subSkills: ['BEM CSS', 'Flexbox', 'Sass', 'Bootstrap', 'HTML5'],
+        subSkills: ['BEM CSS', 'Flexbox', 'Sass'],
         yearStarted: '2011',
         type: 'front-end'
       },
@@ -57,7 +57,7 @@ const skills = [
   },
   {
     type: 'noteworthy',
-    human: "Important skills that aren't my primary focus.",
+    human: 'Other Skills',
     skills: [
       {
         skill: 'Design Apps',
@@ -66,13 +66,14 @@ const skills = [
         type: 'design'
       },
       {
-        skill: 'jQuery',
+        skill: 'Hand Holding',
+        subSkills: ['jQuery', 'Bootstrap'],
         yearStarted: '2013',
         type: 'front-end'
       },
       {
-        skill: 'CMS',
-        subSkills: ['Drupal (Advanced Themer)', 'WordPress'],
+        skill: 'CMS Theming',
+        subSkills: ['Drupal', 'WordPress'],
         yearStarted: '2011',
         type: 'front-end'
       },
@@ -89,32 +90,22 @@ const skills = [
         type: 'back-end'
       },
       {
-        skill: 'Cloud Computing',
-        subSkills: [
-          'Acquia',
-          'Amazon Web Services',
-          'DigitalOcean VPS',
-          'Heroku'
-        ],
+        skill: 'Cloud Hosting',
+        subSkills: ['Acquia', 'Amazon Web Services', 'DigitalOcean VPS'],
         yearStarted: '2015',
         type: 'tools'
-      },
-      {
-        skill: 'Jira',
-        yearStarted: '2015',
-        type: 'tools'
-      },
-      {
-        skill: 'SEO',
-        subSkills: ['Google Analytics', 'Google Tag Manager'],
-        yearStarted: '2014',
-        type: 'front-end'
       },
       {
         skill: 'Marketing Automation',
         subSkills: ['Eloqua', 'Salesforce', 'Marketo'],
         yearStarted: '2017',
         type: 'tools'
+      },
+      {
+        skill: 'Online Tools',
+        subSkills: ['Google Analytics', 'Google Tag Manager', 'Jira'],
+        yearStarted: '2014',
+        type: 'front-end'
       }
     ]
   }

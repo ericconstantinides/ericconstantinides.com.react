@@ -4,29 +4,18 @@ const Experience = props => {
   function renderProjects (project) {
     const title = project.alt_title ? project.alt_title : project.title
     const tech = project.primary_tech.map(tech => (
-      <span key={tech} className='project__sub-item'>
+      <span key={tech} className='project__meta-item'>
         {tech}
       </span>
     ))
     return (
       <article className='project' key={project.id}>
         <div className='project__inner'>
-          <div className='project__primary'>
-            <div className='project__image-wrapper'>
-              <img
-                className='project__image'
-                src={'/images/' + project.screenshot}
-                alt=''
-              />
-            </div>
-            <div className='project__meta'>
-              <h3 className='project__title'>{title}</h3>
-            </div>
-          </div>
-          <p className='project__sub'>
+          <h3 className='project__title'>{title}</h3>
+          <p className='project__meta'>
             <strong>Role:</strong> {project.role}
             <br />
-            <strong>Primary Tech:</strong> {tech}
+            <strong>Tech:</strong> {tech}
           </p>
         </div>
       </article>
