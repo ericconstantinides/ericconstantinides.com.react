@@ -3,21 +3,23 @@ import React from 'react'
 const Experience = props => {
   function renderProjects (project) {
     const title = project.alt_title ? project.alt_title : project.title
-    const tech = project.primary_tech.map(tech => (
-      <span key={tech} className='project__meta-item'>
+    const tech = project.primary_tech.map((tech, index) => (
+      <span key={index} className={`project__meta-item item-${index}`}>
         {tech}
       </span>
     ))
     return (
       <article className='project' key={project.id}>
-        <div className='project__inner'>
-          <h3 className='project__title'>{title}</h3>
-          <p className='project__meta'>
-            <strong>Role:</strong> {project.role}
-            <br />
-            <strong>Tech:</strong> {tech}
-          </p>
-        </div>
+        <p className='project__inner project__meta'>
+          <span className='project__title'>
+            <span className='project__title-inner'>{title}</span>
+          </span>{' '}
+          ({project.date})
+          <br />
+          <strong>Role:</strong> {project.role}
+          <br />
+          <strong>Tech:</strong> {tech}
+        </p>
       </article>
     )
   }

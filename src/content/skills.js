@@ -24,7 +24,7 @@ const skills = [
         type: 'back-end'
       },
       {
-        skill: 'Build Tools',
+        skill: 'JS Tools',
         subSkills: ['Gulp', 'Webpack', 'Babel'],
         yearStarted: '2015',
         type: 'front-end'
@@ -84,15 +84,15 @@ const skills = [
         type: 'back-end'
       },
       {
+        skill: 'Online Tools',
+        subSkills: ['Google Analytics', 'Google Tag Manager', 'Jira'],
+        yearStarted: '2014',
+        type: 'front-end'
+      },
+      {
         skill: 'Cloud Hosting',
         subSkills: ['Acquia', 'Amazon Web Services', 'DigitalOcean VPS'],
         yearStarted: '2015',
-        type: 'tools'
-      },
-      {
-        skill: 'Marketing Automation',
-        subSkills: ['Eloqua', 'Salesforce', 'Marketo'],
-        yearStarted: '2017',
         type: 'tools'
       },
       {
@@ -102,10 +102,10 @@ const skills = [
         type: 'tools'
       },
       {
-        skill: 'Online Tools',
-        subSkills: ['Google Analytics', 'Google Tag Manager', 'Jira'],
-        yearStarted: '2014',
-        type: 'front-end'
+        skill: 'Marketing Automation',
+        subSkills: ['Eloqua', 'Salesforce', 'Marketo'],
+        yearStarted: '2017',
+        type: 'tools'
       }
     ]
   }

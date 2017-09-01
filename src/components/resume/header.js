@@ -3,42 +3,48 @@ import React from 'react'
 const Header = props => {
   return (
     <div className='site-section'>
-      <header className='home-header resume-header'>
-        <div className='image-wrapper print-column-1 resume-header__image-wrapper'>
+      <header className='resume-header'>
+        <div className='resume-header__image-wrapper'>
           <img
-            className='eric-photo resume-header__image'
+            className='resume-header__image'
             src={props.image}
             alt={props.name}
           />
         </div>
-        <div className='copy-wrapper print-column-2'>
-          <h1>{props.name}</h1>
-          <ul className='address'>
-            <li>
+        <div className='resume-header__copy'>
+          <h1 className='resume-header__title'>{props.name}</h1>
+          <ul className='resume-header__meta'>
+            <li className='resume-header__meta-item'>
               <a href={props.email} data-print-url='no'>
                 {props.email}
               </a>
             </li>
-            <li>{props.location}</li>
-            <li>{props.phone}</li>
-            <li className='social-links'>
+            <li className='resume-header__meta-item'>
+              <div className='resume-header__meta-inner-item'>
+                {props.location}
+              </div>
+              <div className='resume-header__meta-inner-item'>
+                {props.phone}
+              </div>
+            </li>
+            <li className='resume-header__meta-item social-links'>
               <a
-                className='social-link social-link__github u-hide-text'
+                className='social-link social-link__github u-hide-text resume-header__meta-inner-item'
                 href={`//github.com/${props.github}`}
                 title='GitHub'
                 target='_blank'
                 data-print-url={`github.com/${props.github}`}
               >
-                Github
+                github.com/{props.github}
               </a>
               <a
-                className='social-link social-link__linkedin u-hide-text'
+                className='social-link social-link__linkedin u-hide-text resume-header__meta-inner-item'
                 href={`//linkedin.com/in/${props.linkedin}`}
                 title='LinkedIn'
                 target='_blank'
                 data-print-url={`linkedin.com/in/${props.linkedin}`}
               >
-                LinkedIn
+                linkedin.com/in/{props.linkedin}
               </a>
             </li>
           </ul>

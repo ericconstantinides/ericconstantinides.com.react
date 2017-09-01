@@ -2,42 +2,14 @@
 	* {
 		color: black !important;
 	}
+	p, li {
+		font-size: 0.825em;
+	}
 	.main-nav__container {
 		display: none !important;
-	}
-	h2 {
-		line-height: 1.2;
 	}
 	.print-avoid-break { page-break-inside: avoid; }
 	.print-page-break-after { page-break-after: always; }
 	.print-hide { display: none !important; }
 	a:hover { text-decoration: none; }
-	.home-header {
-		justify-content: space-between;
-		flex-flow: row-reverse nowrap;
-		text-align: left;
-		.image-wrapper {
-			// width: auto;
-			margin: 0;
-			img {
-				width: 150px;
-				height: auto;
-				display: block;
-			}
-		}
-	}
-	h1 {
-		font-size: 2.75em;
-		margin-bottom: 0.5em;
-	}
-	.site-section {
-		margin-bottom: 0;
-		padding-top: 0;
-		&:last-of-type {
-			padding-bottom: 0;
-		}
-	}
-	.site-section:last-of-type p:last-of-type {
-		margin-bottom: 0;
-	}
 }

@@ -3,25 +3,22 @@ import React from 'react'
 const Skills = props => {
   function renderSubSkills (skills) {
     const subSkills = skills
-      ? skills.map(skill => (
-          <div className='skill__item skill__item--subskill' key={skill}>
+      ? skills.map((skill, index) => (
+          <span key={index} className={`project__meta-item item-${index}`}>
             {skill}
-          </div>
+          </span>
         ))
       : ''
-    return (
-      <div className='project__meta skill__list skill__list--subskill'>
-        {subSkills}
-      </div>
-    )
+    return <span>{subSkills}</span>
   }
   function renderSkills (item) {
     return (
-      <div className='project project--skinny' key={item.skill}>
-        <div className='project__inner'>
-          <h3 className='project__title'>{item.skill}</h3>
-          {renderSubSkills(item.subSkills)}
-        </div>
+      <div className='project project--skills' key={item.skill}>
+        <p className='project__inner project__meta u-mb-0'>
+          <span className='project__title'>
+            <span className='project__title-inner'>{item.skill}</span>
+          </span>, {renderSubSkills(item.subSkills)}
+        </p>
       </div>
     )
   }
@@ -29,7 +26,7 @@ const Skills = props => {
     return (
       <section className='site-section' key={item.type}>
         <h2 className='XXXskill__type-container-title'>{item.human}</h2>
-        <div className='projects__container print-avoid-break'>
+        <div className='projects__container'>
           {item.skills.map(renderSkills)}
         </div>
       </section>
