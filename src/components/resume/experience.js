@@ -43,6 +43,14 @@ const Experience = props => {
     const date = item.startDate
       ? item.startDate + (item.endDate ? ' - ' + item.endDate : '')
       : ''
+    const location = item.location ? (
+      <span>
+        {' '}
+        in <span className='job__header-location'>{item.location}</span>
+      </span>
+    ) : (
+      ''
+    )
     return (
       <article key={item.name} className='job'>
         <div className='print-avoid-break'>
@@ -51,8 +59,8 @@ const Experience = props => {
               <h3 className='job__title'>
                 {item.name}
                 <div className='job__subtitle'>
-                  {item.description} in{' '}
-                  <span className='job__header-location'>{item.location}</span>
+                  {item.description}
+                  {location}
                 </div>
               </h3>
             </div>

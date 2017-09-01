@@ -42,12 +42,6 @@ const skills = [
         type: 'tools'
       },
       {
-        skill: 'Code Editors',
-        subSkills: ['Sublime Text', 'Visual Studio Code', 'Chrome Dev Tools'],
-        yearStarted: '2013',
-        type: 'tools'
-      },
-      {
         skill: 'User Experience (UX)',
         subSkills: ['Design', 'Responsive', 'User Interface (UI)'],
         yearStarted: '2014',
@@ -99,6 +93,12 @@ const skills = [
         skill: 'Marketing Automation',
         subSkills: ['Eloqua', 'Salesforce', 'Marketo'],
         yearStarted: '2017',
+        type: 'tools'
+      },
+      {
+        skill: 'Code Editing',
+        subSkills: ['Sublime Text', 'Visual Studio Code', 'Chrome Dev Tools'],
+        yearStarted: '2013',
         type: 'tools'
       },
       {

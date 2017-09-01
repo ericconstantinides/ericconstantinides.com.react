@@ -14,8 +14,8 @@ const Resume = props => {
       <div className='site-container'>
         <Header {...resumeJS.header} />
         <Introduction introduction={resumeJS.introduction} />
-        <Experience items={resumeJS.experience} />
         <Skills items={resumeJS.skills} />
+        <Experience items={resumeJS.experience} />
         <Experience items={resumeJS.education} />
       </div>
     </BodyClassName>

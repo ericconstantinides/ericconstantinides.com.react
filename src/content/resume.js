@@ -83,17 +83,18 @@ const resume = {
   skills,
   education: [
     {
-      name: 'W.P. Carey School of Business @ ASU',
+      name: 'W.P. Carey School of Business',
       url: 'wpcarey.asu.edu',
+      startDate: 'Arizona State University',
       location: 'Tempe, AZ',
       position: [
         {
-          title: 'Full Stack React Developer',
-          meta: 'Jan 2017 - Curren)'
+          title: 'Bachelor of Science, Computer Information Systems (CIS)',
+          meta: '3.75 Computer Information Systems GPA'
         },
         {
-          title: 'Full Stack Web Developer',
-          meta: '2015 - Dec, 201)'
+          title: 'Bachelor of Science, Marketing',
+          meta: '4.0 Marketing GPA'
         }
       ],
       projects: []

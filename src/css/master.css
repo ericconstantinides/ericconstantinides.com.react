@@ -1053,8 +1053,11 @@ section.header .inner-copy {
 }
 
 @media (max-width: 480px) {
-  .project {
-    width: 100%;
+  .projects__container {
+    margin-left: -1em;
+  }
+  .project__inner {
+    margin-left: 1em;
   }
   .project--skinny {
     width: 50%;
@@ -1091,6 +1094,7 @@ section.header .inner-copy {
 
 .job__title {
   margin-bottom: 0;
+  margin-right: 0.5em;
 }
 
 .job__subtitle {
@@ -1108,6 +1112,7 @@ section.header .inner-copy {
 
 .job__header-date {
   font-family: 'Oswald', sans-serif;
+  text-align: right;
 }
 
 .job__position-meta {
@@ -1309,14 +1314,6 @@ section.header .inner-copy {
   a:hover {
     text-decoration: none;
   }
-  .experience h3 a:after {
-    content: ' [' attr(data-print-url) '] ';
-    font-size: 0.65em;
-    margin-left: 0.75em;
-  }
-  .experience__links a:after {
-    content: ' [' attr(data-print-url) '] ';
-  }
   .home-header {
     justify-content: space-between;
     flex-flow: row-reverse nowrap;
@@ -1330,11 +1327,6 @@ section.header .inner-copy {
     height: auto;
     display: block;
   }
-  .print-column-2 {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-  }
   h1 {
     font-size: 2.75em;
     margin-bottom: 0.5em;
@@ -1347,26 +1339,6 @@ section.header .inner-copy {
     padding-bottom: 0;
   }
   .site-section:last-of-type p:last-of-type {
-    margin-bottom: 0;
-  }
-  .position-group,
-  .full-across {
-    margin-bottom: 1em;
-  }
-  .social-links {
-    margin-top: 0;
-  }
-  .social-links a {
-    display: block;
-  }
-  .social-links a:after {
-    content: ' ' attr(data-print-url);
-  }
-  .social-links a img {
-    width: 14px;
-    margin: 0;
-  }
-  .address {
     margin-bottom: 0;
   }
 }
