@@ -24,14 +24,24 @@ const Skills = props => {
   }
   function renderType (item) {
     return (
-      <section className='site-section' key={item.type}>
-        <h2 className='XXXskill__type-container-title'>{item.human}</h2>
+      <div className='job' key={item.type}>
+        <header className='job__header'>
+          <div className='job__header-left'>
+            <h3 className='job__title'>{item.human}</h3>
+            <div className='job__explanation'>{item.meta}</div>
+          </div>
+        </header>
         <div className='projects__container'>
           {item.skills.map(renderSkills)}
         </div>
-      </section>
+      </div>
     )
   }
-  return <div>{props.items.map(renderType)}</div>
+  return (
+    <section className='site-section'>
+      <h2>Skills</h2>
+      {props.items.map(renderType)}
+    </section>
+  )
 }
 export default Skills

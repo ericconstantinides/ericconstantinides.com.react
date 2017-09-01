@@ -53,6 +53,8 @@ h2 {
   // font-weight: bold;
   @include responsive(font-size,2.25,1.625);
   margin: 0 0 0.5em;
+  line-height: 1.1;
+  border-bottom: 1px solid #333;
   @media print {
     font-size: 2em;
   }
@@ -121,7 +123,7 @@ h4 {
   .resume-header__image-wrapper {
     margin: 0;
     img {
-      width: 100px;
+      width: 98px;
       height: auto;
       display: block;
     }
@@ -149,7 +151,7 @@ h4 {
   // margin-bottom: 2em;
   // @include responsive(padding-top,4);
   // @include responsive(padding-bottom,2);
-  margin-bottom: 2em;
+  margin-bottom: 1.75em;
   @media print {
     .site-section {
       &:last-of-type {
@@ -402,54 +404,6 @@ h4 {
     }
   }
 }
-
-//—————————————————————————————————————————————————————————————————————
-// Skills
-//—————————————————————————————————————————————————————————————————————
-/* .skills {
-  display: block;
-  text-align: left;
-}
-.skills-list {
-  margin: -0.25rem;
-}
-.skills-item {
-  // font-size: 0.875em;
-  border-radius: 3px;
-  margin: 0;
-  border-left: none;
-  transition: 0.15s;
-  padding: 0.25em 0.5em;
-  margin: 0.25rem;
-  display: flex;
-  flex: 1 1 auto;
-  &[data-type="tools"] { background: #e4dfc9 }
-  &[data-type="design"] { background: #e0d2d2 }
-  &[data-type="back-end"] { background: #d8dce8 }
-  &[data-type="front-end"] { background: #c1ddd4 }
-  &:hover {
-    transform: scale(1.05);
-    cursor: default;
-  }
-}
-.skill-list__inner-group {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: baseline;
-}
-.skill-list__group {
-  margin-bottom: 1em;
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-.skills__title {
-  margin: 0 0 0 0.15em;
-  line-height: 1.2;
-}
-.skills__name {
-  font-weight: bold;
-} */
 .checkbox__container {
   display: flex;
 }
@@ -477,12 +431,6 @@ h4 {
   margin-top: 0;
   width: 25%;
   flex-flow: column;
-  &:nth-last-child(1),
-  &:nth-last-child(2) {
-    .project__inner {
-      margin-bottom: 0;
-    }
-  }
 }
 .project--skills {
   width: (100% / 4);
@@ -494,7 +442,7 @@ h4 {
 .project__title {
   font-weight: bold;
   text-decoration: underline;
-  color: #bbb;
+  color: #bbb !important;
 }
 .project__title-inner {
   color: #333;
@@ -596,6 +544,17 @@ h4 {
 }
 .job__position-meta {
   font-size: 0.85em;
+}
+.job__explanation {
+  font-size: 0.75em;
+  margin-bottom: 0;
+}
+.job--no-padding {
+  .job__position {
+    &, p {
+      margin-bottom: 0;
+    }
+  }
 }
 
 // Skills

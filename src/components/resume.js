@@ -14,9 +14,17 @@ const Resume = props => {
       <div className='site-container'>
         <Header {...resumeJS.header} />
         <Introduction introduction={resumeJS.introduction} />
-        <Experience items={resumeJS.experience} />
         <Skills items={resumeJS.skills} />
-        <Experience items={resumeJS.education} />
+        <Experience
+          name='Experience'
+          propsClass=''
+          items={resumeJS.experience}
+        />
+        <Experience
+          name='Education'
+          propsClass='job--no-padding'
+          items={resumeJS.education}
+        />
       </div>
     </BodyClassName>
   )

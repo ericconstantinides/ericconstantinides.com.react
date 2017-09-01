@@ -11,7 +11,7 @@ const projects = [
     description:
       'Constantly Being is a life & style blog promoting global awareness. The site is built on Drupal 7.',
     screenshot: 'portfolio--constantlybeing--md.jpg',
-    primary_tech: ['Drupal', 'JavaScript', 'Sass', 'PHP']
+    primary_tech: ['Drupal CMS', 'JavaScript', 'Sass', 'PHP']
   },
   {
     id: 'evr_2016_eversport',
@@ -25,7 +25,7 @@ const projects = [
     description:
       'EverSport is the live streaming sports destination and media platform built for fans and content rights holders.',
     screenshot: 'portfolio--eversport--md.jpg',
-    primary_tech: ['Drupal', 'JavaScript', 'Sass', 'PHP']
+    primary_tech: ['Drupal CMS', 'JavaScript', 'Sass', 'PHP']
   },
   {
     id: 'evr_2017_embed',
@@ -53,7 +53,7 @@ const projects = [
     description:
       'EverSport\'s custom "Content Rights Management System (CRMS)" for managing rights and distrubution.',
     screenshot: 'portfolio--eversport-crms--md.jpg',
-    primary_tech: ['Drupal', 'JavaScript', 'Sass', 'PHP']
+    primary_tech: ['Drupal CMS', 'JavaScript', 'Sass', 'PHP']
   },
   {
     id: 'ec_2016_annachich',
@@ -67,7 +67,7 @@ const projects = [
     description:
       'Annachich is a luxury designer jewelry line inspired by architecture. The site is built on Drupal 7 and Drupal Commerce.',
     screenshot: 'portfolio--annachich--md.jpg',
-    primary_tech: ['Drupal Commerce', 'JavaScript', 'Sass']
+    primary_tech: ['Drupal', 'Drupal Commerce', 'JavaScript', 'Sass']
   },
   {
     id: 'ec_2015_paoloshoes',
@@ -81,7 +81,7 @@ const projects = [
     description:
       'Paolo Shoes is a Shoe Brand out of San Francisco, CA. The site is built on Drupal 6 and Ubercart.',
     screenshot: 'portfolio--paoloshoes3--md.jpg',
-    primary_tech: ['Drupal', 'UberCart', 'JavaScript', 'Sass']
+    primary_tech: ['Drupal CMS', 'UberCart', 'JavaScript', 'Sass']
   },
   {
     id: 'fb_2015_pure-storage',
@@ -95,7 +95,7 @@ const projects = [
     description:
       'Pure Storage is a Mountain View, California-based enterprise data flash storage company.',
     screenshot: 'portfolio--purestorage--md.jpg',
-    primary_tech: ['Static HTML', 'JavaScript', 'Sass']
+    primary_tech: ['Static HTML', 'JavaScript', 'Sass', 'WordPress blog']
   },
   {
     id: 'fb_2015_adallom',
@@ -108,7 +108,7 @@ const projects = [
     role: 'Lead Developer',
     description: 'Adallom is a cloud security company acquired by MicroSoft.',
     screenshot: 'portfolio--adallom--md.jpg',
-    primary_tech: ['WordPress', 'JavaScript', 'Sass']
+    primary_tech: ['WordPress CMS', 'JavaScript', 'Sass']
   },
   /* {
     id: 'fb_2014_okta-omm',
@@ -136,7 +136,7 @@ const projects = [
     description:
       'Platfora, Inc. is a big data analytics company based in San Mateo, California.',
     screenshot: 'portfolio--platfora--md.jpg',
-    primary_tech: ['WordPress', 'JavaScript', 'Sass']
+    primary_tech: ['WordPress CMS', 'JavaScript', 'Sass']
   },
   {
     id: 'fb_2014_alteryx',
@@ -150,7 +150,7 @@ const projects = [
     description:
       'Alteryx is a data blending and advanced data analytics software company based out of Irvine, California.',
     screenshot: 'portfolio--alteryx--md.jpg',
-    primary_tech: ['Drupal', 'JavaScript', 'Sass']
+    primary_tech: ['Drupal CMS', 'JavaScript', 'Sass']
   },
   {
     id: 'fb_2014_okta',
@@ -164,7 +164,7 @@ const projects = [
     description:
       'Okta is an enterprise-grade, identity management service based out of San Francisco, California.',
     screenshot: 'portfolio--okta--md.jpg',
-    primary_tech: ['PHP', 'JavaScript', 'WordPress', 'Sass']
+    primary_tech: ['PHP', 'JavaScript', 'Sass', 'WordPress blog']
   },
   {
     id: 'fb_2013_abaxis-veterinary',
@@ -178,7 +178,7 @@ const projects = [
     description:
       'Abaxis provides leading edge veterinary technology, tools and services.',
     screenshot: 'portfolio--abaxis-veterinary--md.jpg',
-    primary_tech: ['Drupal', 'JavaScript', 'Sass']
+    primary_tech: ['JavaScript', 'Sass', 'WordPress blog']
   },
   {
     id: 'fb_2013_socialchorus',
@@ -192,7 +192,7 @@ const projects = [
     description:
       'SocialChorus, Inc. provides advocate marketing solutions for brands.',
     screenshot: 'portfolio--socialchorus--md.jpg',
-    primary_tech: ['WordPress', 'JavaScript', 'Sass']
+    primary_tech: ['WordPress CMS', 'JavaScript', 'Sass']
   },
   {
     id: 'fb_2013_pentaho',
@@ -205,7 +205,7 @@ const projects = [
     role: 'Lead Developer',
     description: 'Pentaho is a Business Intelligence (BI) software company.',
     screenshot: 'portfolio--pentaho--md.jpg',
-    primary_tech: ['Drupal', 'JavaScript', 'Sass']
+    primary_tech: ['Drupal CMS', 'JavaScript', 'Sass']
   },
   {
     id: 'fb_2012_liveops',
@@ -219,12 +219,12 @@ const projects = [
     description:
       'LiveOps is a cloud call center company based in Scottsdale, Arizona.',
     screenshot: 'portfolio--liveops--md.jpg',
-    primary_tech: ['Drupal', 'JavaScript', 'Sass']
+    primary_tech: ['Drupal CMS', 'JavaScript', 'CSS']
   },
   {
     id: 'fb_2012_island',
     title: 'Island Resort & Casino',
-    alt_title: 'IslandResort.com',
+    alt_title: 'IslandResortCasino.com',
     employer: 'Flickerbox, Inc',
     date: '2012',
     website: 'www.islandresortandcasino.com',
@@ -233,7 +233,7 @@ const projects = [
     description:
       'Island Resort and Casino is an Indian Casino based in Harris, Michigan.',
     screenshot: 'portfolio--islandresortandcasino--md.jpg',
-    primary_tech: ['Drupal', 'JavaScript', 'Sass']
+    primary_tech: ['Drupal CMS', 'JavaScript', 'CSS']
   },
   {
     id: 'ec_2016_cameron-vail',
@@ -247,7 +247,7 @@ const projects = [
     description:
       'Cameron Vail Design is a single page portfolio website built on Drupal 7.',
     screenshot: 'portfolio--cameronvaildesign--md.jpg',
-    primary_tech: ['Drupal', 'JavaScript', 'Sass']
+    primary_tech: ['Drupal CMS', 'JavaScript', 'Sass']
   },
   /*   {
     id: 'ec_2012_annachich',
@@ -261,7 +261,7 @@ const projects = [
     description:
       'Annachich is a luxury designer jewelry line inspired by architecture. The site is built on Drupal 6 and Ubercart.',
     screenshot: 'portfolio--annachich-v1--md.jpg',
-    primary_tech: ['Drupal', 'Ubercart', 'CSS']
+    primary_tech: ['Drupal CMS', 'Ubercart', 'CSS']
   }, */
   {
     id: 'ec_2011_dukeduchess',
@@ -275,7 +275,7 @@ const projects = [
     description:
       'Duke et Duchess is a clothing store based in San Francisco, California. The site is built on Drupal 6 and Ubercart.',
     screenshot: 'portfolio--dukeduchess--md.jpg',
-    primary_tech: ['Drupal', 'Ubercart', 'JavaScript', 'CSS']
+    primary_tech: ['Drupal CMS', 'Ubercart', 'JavaScript', 'CSS']
   },
   {
     id: 'ec_2011_btwd',
@@ -289,7 +289,7 @@ const projects = [
     description:
       'Bike to Work Day is an annual event held on various days in the Spring across the United States and Canada that promotes the bicycle as an option for commuting to work.',
     screenshot: 'portfolio--youcanbikethere--md.jpg',
-    primary_tech: ['Drupal', 'CSS']
+    primary_tech: ['Drupal CMS', 'CSS']
   },
   {
     id: 'ec_2011_bottomlessbrunch',
@@ -303,7 +303,7 @@ const projects = [
     description:
       'Bottomless Brunch is THE go to place to find out exactly where to get bottomless mimosas for not a lot of money.',
     screenshot: 'portfolio--bottomlessbrunch--md.jpg',
-    primary_tech: ['Drupal', 'CSS']
+    primary_tech: ['Drupal CMS', 'CSS']
   },
   {
     id: 'ec_2010_chicfashionweek',
@@ -316,7 +316,7 @@ const projects = [
     role: 'Lead Developer',
     description: 'Awarded best technical website in 2010 by eFashionBlog SF.',
     screenshot: 'portfolio--chicfashionweeksf--md.jpg',
-    primary_tech: ['Drupal', 'CSS']
+    primary_tech: ['Drupal CMS', 'CSS']
   },
   {
     id: 'ec_2008_babc',
@@ -330,9 +330,9 @@ const projects = [
     description:
       'The Bay Area Bicycle Coalition promotes safe and enjoyable bicycling for everyday transportation in the San Francisco Bay Area.',
     screenshot: 'portfolio--bayareabikes--md.jpg',
-    primary_tech: ['Drupal', 'CSS']
-  },
-  {
+    primary_tech: ['Drupal CMS', 'CSS']
+  }
+  /*   {
     id: 'ec_2005_sfima',
     title: 'SFIMA',
     alt_title: 'SFIMA.org',
@@ -345,6 +345,6 @@ const projects = [
       'SFIMA is the San Francisco Institute of Management Accountants.',
     screenshot: 'portfolio--sfima--md.jpg',
     primary_tech: ['Static HTML', 'CSS']
-  }
+  } */
 ]
 export default projects

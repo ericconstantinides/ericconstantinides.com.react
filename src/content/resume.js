@@ -20,7 +20,7 @@ const resume = {
     'bear://x-callback-url/open-note?id=3E14B199-78A5-468E-905C-793F78F74C5D-74885-0003EB8E172B8A9F',
   introduction: `<p><b>In a nutshell:</b> I'm am a MERN (Mongo, Express, React, Node) stack developer specializing in React, Redux, ES2015/ES6, Sass, and Vanilla JS.</p>
   <p><b>Previously:</b> I was lead front-end developer at EverSport Media in charge of the consumer-facing and administration themes of eversport.tv as well as the front-end for their Single Page App. Before EverSport, I was senior web developer at Flickerbox in San Francisco creating enterprise-level websites.</p>
-  <p><b>Most Recently:</b> After EverSport (my last job) folded, I pivoted my career towards mastering React and the MERN stack.</p>`,
+  <p><b>Most Recently:</b> After EverSport (my last job) collapsed, I pivoted my career towards React and the MERN stack.</p>`,
   experience: [
     {
       name: 'EverSport Media',
@@ -61,7 +61,7 @@ const resume = {
       projects: getProjects('Flickerbox, Inc')
     },
     {
-      name: 'Independent Developer',
+      name: 'Independent Web Developer',
       location: 'San Jose, CA',
       startDate: '2005',
       endDate: 'Current',
@@ -70,13 +70,11 @@ const resume = {
         //   title: 'Full Stack React Developer',
         //   meta: 'Jan 2017 - Curren)'
         // },
-        // {
-        //   title: 'Full Stack Web Developer',
-        //   meta: '2015 - Dec, 2016',
-        //   info: ''
-        // }
+        {
+          title: 'Full Stack Web Developer',
+          info: `Set up sites using a Virtual Private Server (Digital Ocean). Transform mock-ups into HTML templates. Code CSS, HTML, and JavaScript. Host and manage sites.`
+        }
       ],
-      responsibilities: `Set up sites using a Virtual Private Server (Digital Ocean). Transform mock-ups into HTML templates. Code CSS, HTML, and JavaScript. Host and manage sites.`,
       projects: getProjects('Eric Constantinides')
     }
   ],
@@ -90,11 +88,11 @@ const resume = {
       position: [
         {
           title: 'Bachelor of Science, Computer Information Systems (CIS)',
-          meta: '3.75 Computer Information Systems GPA'
+          info: '3.75 Computer Information Systems GPA'
         },
         {
           title: 'Bachelor of Science, Marketing',
-          meta: '4.0 Marketing GPA'
+          info: '4.0 Marketing GPA'
         }
       ],
       projects: []

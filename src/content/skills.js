@@ -4,6 +4,7 @@ const skills = [
   {
     type: 'passionate',
     human: 'My Passion Skills',
+    meta: "Skills I'm enthusiastic about; the focus of my career",
     skills: [
       {
         skill: 'React',
@@ -31,7 +32,7 @@ const skills = [
       },
       {
         skill: 'CSS',
-        subSkills: ['BEM CSS', 'Flexbox', 'Sass'],
+        subSkills: ['Sass/SCSS', 'BEM CSS', 'Flexbox'],
         yearStarted: '2011',
         type: 'front-end'
       },
@@ -43,7 +44,7 @@ const skills = [
       },
       {
         skill: 'User Experience (UX)',
-        subSkills: ['Design', 'Responsive', 'User Interface (UI)'],
+        subSkills: ['Responsive Design', 'User Interface (UI)'],
         yearStarted: '2014',
         type: 'design'
       }
@@ -52,6 +53,7 @@ const skills = [
   {
     type: 'noteworthy',
     human: 'Other Skills',
+    meta: 'Other skills I have that are not my primary focus',
     skills: [
       {
         skill: 'Design Apps',
@@ -67,7 +69,7 @@ const skills = [
       },
       {
         skill: 'CMS Theming',
-        subSkills: ['Drupal', 'WordPress'],
+        subSkills: ['Drupal (advanced)', 'WordPress'],
         yearStarted: '2011',
         type: 'front-end'
       },
@@ -97,7 +99,11 @@ const skills = [
       },
       {
         skill: 'Code Editing',
-        subSkills: ['Sublime Text', 'Visual Studio Code', 'Chrome Dev Tools'],
+        subSkills: [
+          'Sublime Text',
+          'Visual Studio Code',
+          'Chrome Developer Tools'
+        ],
         yearStarted: '2013',
         type: 'tools'
       },
