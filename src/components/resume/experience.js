@@ -51,32 +51,39 @@ const Experience = props => {
     ) : (
       ''
     )
+    const leftProjects = item.projects
+      .filter((project, index) => {
+        return index + 1 <= item.projects.length / 2
+      })
+      .map(renderProjects)
+    const rightProjects = item.projects
+      .filter((project, index) => {
+        return index + 1 > item.projects.length / 2
+      })
+      .map(renderProjects)
     return (
-      <article key={item.name} className='job'>
-        <div className='XXXXXprint-avoid-break'>
-          <header className='job__header'>
-            <div className='job__header-left'>
-              <h3 className='job__title'>
-                {item.name}
-                <div className='job__subtitle'>
-                  {item.description}
-                  {location}
-                </div>
-              </h3>
-            </div>
-            <div className='job__header-right'>
-              <div className='job__header-date'>{date}</div>
-            </div>
-          </header>
-          <div className='job__content'>
-            {item.position.map(renderPosition)}
+      <article key={item.name} className='job print-avoid-break'>
+        <header className='job__header'>
+          <div className='job__header-left'>
+            <h3 className='job__title'>
+              {item.name}
+              <div className='job__subtitle'>
+                {item.description}
+                {location}
+              </div>
+            </h3>
           </div>
-          <p>
-            <span className='project__meta'>Completed projects include:</span>
-          </p>
-          <div className='projects__container XXXXXprint-avoid-break'>
-            {item.projects.map(renderProjects)}
+          <div className='job__header-right'>
+            <div className='job__header-date'>{date}</div>
           </div>
+        </header>
+        <div className='job__content'>{item.position.map(renderPosition)}</div>
+        <p>
+          <span className='project__meta'>Completed projects include:</span>
+        </p>
+        <div className='projects__container XXXXXprint-avoid-break'>
+          <div className='projects__container--left'>{leftProjects}</div>
+          <div className='projects__container--right'>{rightProjects}</div>
         </div>
       </article>
     )

@@ -3,8 +3,8 @@
 const skills = [
   {
     type: 'passionate',
-    human: 'My Passion Skills',
-    meta: 'The focus of my career',
+    human: 'Primary Skills',
+    meta: 'My primary area of expertise',
     skills: [
       {
         skill: 'React',
@@ -52,8 +52,8 @@ const skills = [
   },
   {
     type: 'noteworthy',
-    human: 'Other Skills',
-    meta: 'Various noteworthy skills',
+    human: 'Secondary Skills',
+    meta: 'Various other noteworthy skills',
     skills: [
       {
         skill: 'Design Apps',

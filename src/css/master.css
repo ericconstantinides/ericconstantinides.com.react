@@ -371,7 +371,7 @@ h1 {
 h2 {
   font-size: 2.25em;
   font-size: 3.6vw;
-  margin: 0 0 0.5em;
+  margin: 0 0 1em;
   line-height: 1.1;
   border-bottom: 1px solid #333;
 }
@@ -951,8 +951,12 @@ h4 {
 
 .projects__container {
   display: flex;
-  flex-flow: wrap;
-  margin: 0 0 -0.75rem -1.25rem;
+  margin: 0 0 0 -1.25rem;
+}
+
+.projects__container--left,
+.projects__container__right {
+  width: 50%;
 }
 
 .project {
@@ -962,7 +966,7 @@ h4 {
 }
 
 .project__inner {
-  margin: 0 0 0.75rem 1.25rem;
+  margin: 0 0 0 1.25rem;
   position: relative;
 }
 .project__inner:before {
@@ -971,11 +975,8 @@ h4 {
   position: absolute;
   font-size: 2rem;
   top: 0;
-  bottom: 0;
   left: -0.85rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  line-height: 0.4;
 }
 
 .project__title {
@@ -1004,24 +1005,24 @@ h4 {
   content: none;
 }
 
-.project {
+.projectXXXXX {
   width: 33.33333%;
 }
 
 @media (max-width: 900px) {
-  .project {
+  .projectXXXXX {
     width: 50%;
   }
 }
 
 @media (max-width: 600px) {
-  .project {
+  .projectXXXXX {
     width: 50%;
   }
 }
 
 @media (max-width: 480px) {
-  .project {
+  .projectXXXXX {
     width: 100%;
   }
   .projects__container {
@@ -1040,7 +1041,7 @@ h4 {
   .projects__container {
     font-size: 0.875em;
   }
-  .project {
+  .projectXXXXX {
     width: 50%;
   }
 }
@@ -1053,7 +1054,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #eee;
   margin-bottom: 1em;
 }
 
