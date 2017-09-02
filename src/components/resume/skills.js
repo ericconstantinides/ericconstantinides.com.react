@@ -15,7 +15,7 @@ const Skills = props => {
     return (
       <div className='project project--skills' key={item.skill}>
         <p className='project__inner project__meta u-mb-0'>
-          <span className='project__title'>
+          <span className='project__title no-underline'>
             <span className='project__title-inner'>{item.skill}</span>
           </span>, {renderSubSkills(item.subSkills)}
         </p>
@@ -27,9 +27,12 @@ const Skills = props => {
       <div className='job' key={item.type}>
         <header className='job__header'>
           <div className='job__header-left'>
-            <h3 className='job__title'>{item.human}</h3>
-            <div className='job__explanation'>{item.meta}</div>
+            <h3 className='job__title'>
+              {item.human}
+              <div className='job__subtitle'>{item.meta}</div>
+            </h3>
           </div>
+          <div className='job__header-right' />
         </header>
         <div className='projects__container'>
           {item.skills.map(renderSkills)}

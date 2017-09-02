@@ -14,12 +14,12 @@ const Resume = props => {
       <div className='site-container'>
         <Header {...resumeJS.header} />
         <Introduction introduction={resumeJS.introduction} />
-        <Skills items={resumeJS.skills} />
         <Experience
           name='Experience'
           propsClass=''
           items={resumeJS.experience}
         />
+        <Skills items={resumeJS.skills} />
         <Experience
           name='Education'
           propsClass='job--no-padding'

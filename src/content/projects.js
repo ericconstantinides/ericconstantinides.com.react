@@ -28,23 +28,9 @@ const projects = [
     primary_tech: ['Drupal CMS', 'JavaScript', 'Sass', 'PHP']
   },
   {
-    id: 'evr_2017_embed',
-    title: 'EverSport’s Single Page App',
-    alt_title: 'Single Page App',
-    employer: 'EverSport Media',
-    date: '2015-2017',
-    website: 'www.ericconstantinides.com/embed',
-    active: true,
-    role: 'Lead Interactivity Developer | Co-Designer',
-    description:
-      'Eversport’s Single Page App is a responsive and embeddable JavaScript player for distributing EverSport’s content on third-party websites.',
-    screenshot: 'portfolio--eversport-embed--md.jpg',
-    primary_tech: ['JavaScript', 'JSON', 'Sass']
-  },
-  {
     id: 'evr_2016_crms',
     title: 'EverSport’s Administration Theme',
-    alt_title: 'Admin Theme',
+    alt_title: 'EverSport.tv Admin Theme',
     employer: 'EverSport Media',
     date: '2015-2017',
     website: 'eversport.tv/admin',
@@ -54,6 +40,20 @@ const projects = [
       'EverSport\'s custom "Content Rights Management System (CRMS)" for managing rights and distrubution.',
     screenshot: 'portfolio--eversport-crms--md.jpg',
     primary_tech: ['Drupal CMS', 'JavaScript', 'Sass', 'PHP']
+  },
+  {
+    id: 'evr_2017_embed',
+    title: 'EverSport’s Single Page App',
+    alt_title: 'Single Page App',
+    employer: 'EverSport Media',
+    date: '2015-2017',
+    website: 'www.ericconstantinides.com/embed',
+    active: true,
+    role: 'Lead Front-End Developer | Co-Designer',
+    description:
+      'Eversport’s Single Page App is a responsive and embeddable JavaScript player for distributing EverSport’s content on third-party websites.',
+    screenshot: 'portfolio--eversport-embed--md.jpg',
+    primary_tech: ['JavaScript', 'JSON', 'AJAX', 'Sass']
   },
   {
     id: 'ec_2016_annachich',
@@ -95,7 +95,7 @@ const projects = [
     description:
       'Pure Storage is a Mountain View, California-based enterprise data flash storage company.',
     screenshot: 'portfolio--purestorage--md.jpg',
-    primary_tech: ['Static HTML', 'JavaScript', 'Sass', 'WordPress blog']
+    primary_tech: ['Static HTML', 'JavaScript', 'Sass', 'WordPress']
   },
   {
     id: 'fb_2015_adallom',
@@ -164,7 +164,7 @@ const projects = [
     description:
       'Okta is an enterprise-grade, identity management service based out of San Francisco, California.',
     screenshot: 'portfolio--okta--md.jpg',
-    primary_tech: ['PHP', 'JavaScript', 'Sass', 'WordPress blog']
+    primary_tech: ['PHP', 'JavaScript', 'Sass', 'WordPress']
   },
   {
     id: 'fb_2013_abaxis-veterinary',
@@ -178,7 +178,7 @@ const projects = [
     description:
       'Abaxis provides leading edge veterinary technology, tools and services.',
     screenshot: 'portfolio--abaxis-veterinary--md.jpg',
-    primary_tech: ['JavaScript', 'Sass', 'WordPress blog']
+    primary_tech: ['JavaScript', 'Sass', 'WordPress']
   },
   {
     id: 'fb_2013_socialchorus',

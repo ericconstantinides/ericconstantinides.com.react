@@ -429,20 +429,33 @@ h4 {
 .project {
   display: flex;
   margin-top: 0;
-  width: 25%;
   flex-flow: column;
 }
-.project--skills {
-  width: (100% / 4);
-}
 .project__inner {
-  flex: 1;
+  // flex: 1;
   margin: 0 0 0.75rem 1.25rem;
+  position: relative;
+  // padding-left: 0.5em;
+  &:before {
+    content: "\2022";
+    display: block;
+    position: absolute;
+    font-size: 2rem;
+    top: 0;
+    bottom: 0;
+    left: -0.85rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 .project__title {
   font-weight: bold;
   text-decoration: underline;
   color: #bbb !important;
+  &.no-underline {
+    text-decoration: none;
+  }
 }
 .project__title-inner {
   color: #333;
@@ -459,39 +472,28 @@ h4 {
     content: none;
   }
 }
-@media only screen and (max-width: $bp-large) {
-  .project--skills {
-    width: (100% / 4);
-  }  
+.project {
+  width: (100% / 3);
 }
 @media (max-width: $bp-medium-large) {
   .project {
-    width: 33.33%;
-  }
-  .project--skills {
-    width: (100% / 3);
+    width: (100% / 2);
   }
 }
 @media (max-width: $bp-medium-small) {
   .project {
     width: 50%;
   }
-  .project--skills {
-    width: (100% / 2);
-  }
 }
 @media (max-width: $bp-small) {
-  // .project {
-  //   width: 100%;
-  // }
+  .project {
+    width: 100%;
+  }
   .projects__container {
     margin-left: -1em;
   }
   .project__inner {
     margin-left: 1em;
-  }
-  .project--skills {
-    width: (100% / 1);
   }
   .project__image-wrapper {
     width: 70px;
@@ -504,9 +506,6 @@ h4 {
     font-size: 0.875em;
   }
   .project {
-    width: (100% / 3);
-  }
-  .project--skills {
     width: (100% / 2);
   }
 }
@@ -528,7 +527,7 @@ h4 {
   margin-right: 0.5em;
 }
 .job__subtitle {
-  font-size: 0.6em;
+  font-size: 0.55em;
   // margin-left: 1em;
 }
 .job__header-location {
@@ -550,10 +549,25 @@ h4 {
   margin-bottom: 0;
 }
 .job--no-padding {
+  .job__content + p {
+    display: none;
+  }
   .job__position {
     &, p {
       margin-bottom: 0;
     }
+  }
+}
+@media print {
+  .job__title {
+    display: flex;
+    align-items: baseline;
+  }
+  .job__header {
+    // border-bottom: none;
+  }
+  .job__subtitle {
+    margin-left: 0.5em;
   }
 }
 
@@ -603,9 +617,9 @@ h4 {
   position: absolute;
   background-color: rgba(white,0.1);
 }
-//?????????????????????????????????????????????????????????????????????
+//------------------------------------------------------------------------------
 // Resume Page
-//?????????????????????????????????????????????????????????????????????
+//------------------------------------------------------------------------------
 .body--resume {
   .site-header__container {
     background: none;

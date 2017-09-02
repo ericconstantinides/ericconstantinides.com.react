@@ -11,15 +11,12 @@ const Experience = props => {
     return (
       <article className='project' key={project.id}>
         <p className='project__inner project__meta'>
-          <strong>Project:</strong>{' '}
           <span className='project__title'>
             <span className='project__title-inner'>{title}</span>
           </span>{' '}
           ({project.date})
           <br />
-          <strong>Role:</strong> {project.role}
-          <br />
-          <strong>Tech:</strong> {tech}
+          <strong>{project.role}</strong>, {tech}
         </p>
       </article>
     )
@@ -56,7 +53,7 @@ const Experience = props => {
     )
     return (
       <article key={item.name} className='job'>
-        <div className='print-avoid-break'>
+        <div className='XXXXXprint-avoid-break'>
           <header className='job__header'>
             <div className='job__header-left'>
               <h3 className='job__title'>
@@ -74,7 +71,10 @@ const Experience = props => {
           <div className='job__content'>
             {item.position.map(renderPosition)}
           </div>
-          <div className='projects__container print-avoid-break'>
+          <p>
+            <span className='project__meta'>Completed projects include:</span>
+          </p>
+          <div className='projects__container XXXXXprint-avoid-break'>
             {item.projects.map(renderProjects)}
           </div>
         </div>

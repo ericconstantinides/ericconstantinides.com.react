@@ -18,9 +18,9 @@ const resume = {
   },
   canonical:
     'bear://x-callback-url/open-note?id=3E14B199-78A5-468E-905C-793F78F74C5D-74885-0003EB8E172B8A9F',
-  introduction: `<p><b>In a nutshell:</b> I'm am a MERN (Mongo, Express, React, Node) stack developer specializing in React, Redux, ES2015/ES6, Sass, and Vanilla JS.</p>
+  introduction: `<p><b>In a nutshell:</b> I'm am a <strong>MERN (Mongo, Express, React, Node)</strong> stack developer specializing in <strong>React</strong>, <strong>Redux</strong>, <strong>ES2015</strong>/<strong>ES6</strong>, <strong>Sass</strong>, and <strong>Vanilla JS</strong>.</p>
   <p><b>Previously:</b> I was lead front-end developer at EverSport Media in charge of the consumer-facing and administration themes of eversport.tv as well as the front-end for their Single Page App. Before EverSport, I was senior web developer at Flickerbox in San Francisco creating enterprise-level websites.</p>
-  <p><b>Most Recently:</b> After EverSport (my last job) collapsed, I pivoted my career towards React and the MERN stack.</p>`,
+  <p><b>Most Recently:</b> After my last company (EverSport) collapsed, I pivoted my career towards React and the MERN stack.</p>`,
   experience: [
     {
       name: 'EverSport Media',
@@ -50,7 +50,7 @@ const resume = {
         {
           title: 'Senior LAMP Stack Web Developer',
           meta: 'Jan, 2014 - June, 2015',
-          info: `In addition to the developer duties, I orchestrated the weekly developer meetings. Drafted timelines and estimates for future projects. Composed technical briefs for client-side contracts.`
+          info: `Additional duties included orchestrating the weekly developer meetings; drafting timelines and estimates for future projects; composing technical briefs for client-side contracts.`
         },
         {
           title: 'LAMP Stack Web Developer',

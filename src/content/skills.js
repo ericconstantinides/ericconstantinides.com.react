@@ -4,7 +4,7 @@ const skills = [
   {
     type: 'passionate',
     human: 'My Passion Skills',
-    meta: "Skills I'm enthusiastic about; the focus of my career",
+    meta: 'The focus of my career',
     skills: [
       {
         skill: 'React',
@@ -53,7 +53,7 @@ const skills = [
   {
     type: 'noteworthy',
     human: 'Other Skills',
-    meta: 'Other skills I have that are not my primary focus',
+    meta: 'Various noteworthy skills',
     skills: [
       {
         skill: 'Design Apps',
@@ -62,15 +62,9 @@ const skills = [
         type: 'design'
       },
       {
-        skill: 'Hand Holding',
+        skill: 'Front-end helpers',
         subSkills: ['jQuery', 'Bootstrap'],
         yearStarted: '2013',
-        type: 'front-end'
-      },
-      {
-        skill: 'CMS Theming',
-        subSkills: ['Drupal (advanced)', 'WordPress'],
-        yearStarted: '2011',
         type: 'front-end'
       },
       {
@@ -80,16 +74,22 @@ const skills = [
         type: 'back-end'
       },
       {
-        skill: 'Apache',
-        subSkills: ['Unix', 'HTTPS/SSL'],
-        yearStarted: '2014',
-        type: 'back-end'
+        skill: 'CMS Theming',
+        subSkills: ['Drupal (advanced)', 'WordPress'],
+        yearStarted: '2011',
+        type: 'front-end'
       },
       {
         skill: 'Online Tools',
         subSkills: ['Google Analytics', 'Google Tag Manager', 'Jira'],
         yearStarted: '2014',
         type: 'front-end'
+      },
+      {
+        skill: 'Marketing Automation',
+        subSkills: ['Eloqua', 'Salesforce', 'Marketo'],
+        yearStarted: '2017',
+        type: 'tools'
       },
       {
         skill: 'Cloud Hosting',
@@ -108,10 +108,10 @@ const skills = [
         type: 'tools'
       },
       {
-        skill: 'Marketing Automation',
-        subSkills: ['Eloqua', 'Salesforce', 'Marketo'],
-        yearStarted: '2017',
-        type: 'tools'
+        skill: 'Apache',
+        subSkills: ['Unix', 'HTTPS/SSL'],
+        yearStarted: '2014',
+        type: 'back-end'
       }
     ]
   }
