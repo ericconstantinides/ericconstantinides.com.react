@@ -52,7 +52,7 @@ h2 {
   @extend %oswald;
   // font-weight: bold;
   @include responsive(font-size,2.25,1.625);
-  margin: 0 0 1em;
+  margin: 0 0 0.65em;
   line-height: 1.1;
   border-bottom: 1px solid #333;
   @media print {
@@ -65,6 +65,7 @@ h3 {
   font-size: 1.75em;
   font-weight: 300;
   margin: 0 0 0.4em;
+  line-height: 1.2;
 }
 p {
   margin: 0 0 1em;
@@ -83,6 +84,23 @@ h4 {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 0;
+}
+
+.site-section {
+  margin-bottom: 1.5rem;
+  @media print {
+    .site-section {
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+    .site-section:last-of-type p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+.bg--whitesmoke {
+  background-color: whitesmoke;
 }
 /*
 * Resume Header
@@ -146,27 +164,9 @@ h4 {
     }
   }
 }
-
-.site-section {
-  // margin-bottom: 2em;
-  // @include responsive(padding-top,4);
-  // @include responsive(padding-bottom,2);
-  margin-bottom: 1.75em;
-  @media print {
-    .site-section {
-      &:last-of-type {
-        margin-bottom: 0;
-      }
-    }
-    .site-section:last-of-type p:last-of-type {
-      margin-bottom: 0;
-    }
-  }
+.introduction {
+  margin-top: -0.25rem;  
 }
-.bg--whitesmoke {
-  background-color: whitesmoke;
-}
-
 .columnize { @extend .clearfix; }
 .columnize-2 .column { width: 50%; }
 .columnize-3 .column { width: 33.33%; }
@@ -423,21 +423,25 @@ h4 {
 //------------------------------------------------------------------------------
 .projects__container {
   display: flex;
-  // flex-flow: wrap;
-  margin: 0 0 0 -1.25rem;
+  flex-flow: wrap;
 }
-.projects__container--left,
-.projects__container__right {
-  width: 50%;
+.projects__column {
+  flex: 0 0 50%;
+  &:first-child { padding-right: 0.5rem; }
+  &:last-child { padding-left: 0.5rem; }
 }
 .project {
   display: flex;
   margin-top: 0;
   flex-flow: column;
+  padding: 0.125em;
+  padding-left: 0.75rem;
+}
+.project--skills {
 }
 .project__inner {
   // flex: 1;
-  margin: 0 0 0 1.25rem;
+  margin: 0;
   position: relative;
   // padding-left: 0.5em;
   &:before {
@@ -473,48 +477,27 @@ h4 {
     content: none;
   }
 }
-.projectXXXXX {
-  width: (100% / 3);
-}
-@media (max-width: $bp-medium-large) {
-  .projectXXXXX {
-    width: (100% / 2);
-  }
-}
-@media (max-width: $bp-medium-small) {
-  .projectXXXXX {
-    width: 50%;
-  }
-}
 @media (max-width: $bp-small) {
-  .projectXXXXX {
-    width: 100%;
-  }
   .projects__container {
-    margin-left: -1em;
+    // margin-left: -0.25em;
+    display: block;
   }
-  .project__inner {
-    margin-left: 1em;
-  }
-  .project__image-wrapper {
-    width: 70px;
-    object-fit: none;
-    // height: (70px * 9/16);
+  .projects__column:first-child,
+  .projects__column:last-child {
+    padding: 0;
   }
 }
 @media print {
   .projects__container {
     font-size: 0.875em;
   }
-  .projectXXXXX {
-    width: (100% / 2);
-  }
 }
 //-----------------------------------------------------------------------------
 // Job
 //-----------------------------------------------------------------------------
 .job {
-  margin-bottom: 2em;
+  margin-bottom: 1.75rem;
+  padding-top: 0.25rem;
 }
 .job__header {
   display: flex;
@@ -529,7 +512,7 @@ h4 {
 }
 .job__subtitle {
   font-size: 0.55em;
-  // margin-left: 1em;
+  line-height: 1.6;
 }
 .job__header-location {
   font-weight: 500;
@@ -563,12 +546,14 @@ h4 {
   .job__title {
     display: flex;
     align-items: baseline;
+    line-height: 1.1;
   }
   .job__header {
-    // border-bottom: none;
+    line-height: 1.1rem;
   }
   .job__subtitle {
     margin-left: 0.5em;
+    line-height: 1.2;
   }
 }
 

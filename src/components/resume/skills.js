@@ -23,6 +23,16 @@ const Skills = props => {
     )
   }
   function renderType (item) {
+    const leftSkills = item.skills
+      .filter((project, index) => {
+        return index + 1 <= Math.round(item.skills.length / 2)
+      })
+      .map(renderSkills)
+    const rightSkills = item.skills
+      .filter((project, index) => {
+        return index + 1 > Math.round(item.skills.length / 2)
+      })
+      .map(renderSkills)
     return (
       <div className='job' key={item.type}>
         <header className='job__header'>
@@ -35,13 +45,14 @@ const Skills = props => {
           <div className='job__header-right' />
         </header>
         <div className='projects__container'>
-          {item.skills.map(renderSkills)}
+          <div className='projects__column'>{leftSkills}</div>
+          <div className='projects__column'>{rightSkills}</div>
         </div>
       </div>
     )
   }
   return (
-    <section className='site-section'>
+    <section className='site-section print-avoid-break'>
       <h2>Skills</h2>
       {props.items.map(renderType)}
     </section>

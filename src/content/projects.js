@@ -7,11 +7,11 @@ const projects = [
     date: '2017',
     website: 'www.constantlybeing.com',
     active: true,
-    role: 'Lead Developer/Co-Designer',
+    role: 'Lead Developer, Co-Designer',
     description:
       'Constantly Being is a life & style blog promoting global awareness. The site is built on Drupal 7.',
     screenshot: 'portfolio--constantlybeing--md.jpg',
-    primary_tech: ['Drupal CMS', 'JavaScript', 'Sass', 'PHP']
+    primary_tech: ['Drupal CMS', 'JavaScript', 'Sass']
   },
   {
     id: 'evr_2016_eversport',
@@ -21,24 +21,10 @@ const projects = [
     date: '2015-2017',
     website: 'eversport.tv',
     active: true,
-    role: 'Lead Front-End Developer/Co-Designer',
+    role: 'Lead Front-End Developer, Co-Designer',
     description:
       'EverSport is the live streaming sports destination and media platform built for fans and content rights holders.',
     screenshot: 'portfolio--eversport--md.jpg',
-    primary_tech: ['Drupal CMS', 'JavaScript', 'Sass', 'PHP']
-  },
-  {
-    id: 'evr_2016_crms',
-    title: 'EverSport’s Administration Theme',
-    alt_title: 'EverSport.tv Admin Theme',
-    employer: 'EverSport Media',
-    date: '2015-2017',
-    website: 'eversport.tv/admin',
-    active: false,
-    role: 'Lead Theme Developer/Co-Designer',
-    description:
-      'EverSport\'s custom "Content Rights Management System (CRMS)" for managing rights and distrubution.',
-    screenshot: 'portfolio--eversport-crms--md.jpg',
     primary_tech: ['Drupal CMS', 'JavaScript', 'Sass', 'PHP']
   },
   {
@@ -49,11 +35,25 @@ const projects = [
     date: '2015-2017',
     website: 'www.ericconstantinides.com/embed',
     active: true,
-    role: 'Lead Front-End Developer/Co-Designer',
+    role: 'Lead Front-End Developer, Co-Designer',
     description:
       'Eversport’s Single Page App is a responsive and embeddable JavaScript player for distributing EverSport’s content on third-party websites.',
     screenshot: 'portfolio--eversport-embed--md.jpg',
     primary_tech: ['JavaScript', 'JSON', 'AJAX', 'Sass']
+  },
+  {
+    id: 'evr_2016_crms',
+    title: 'EverSport’s Administration Theme',
+    alt_title: 'EverSport.tv Admin Theme',
+    employer: 'EverSport Media',
+    date: '2015-2017',
+    website: 'eversport.tv/admin',
+    active: false,
+    role: 'Lead Theme Developer, Co-Designer',
+    description:
+      'EverSport\'s custom "Content Rights Management System (CRMS)" for managing rights and distrubution.',
+    screenshot: 'portfolio--eversport-crms--md.jpg',
+    primary_tech: ['Drupal CMS', 'JavaScript', 'Sass', 'PHP']
   },
   {
     id: 'ec_2016_annachich',
@@ -63,7 +63,7 @@ const projects = [
     date: '2016',
     website: 'www.annachich.com',
     active: true,
-    role: 'Lead Developer/Co-Designer',
+    role: 'Lead Developer, Co-Designer',
     description:
       'Annachich is a luxury designer jewelry line inspired by architecture. The site is built on Drupal 7 and Drupal Commerce.',
     screenshot: 'portfolio--annachich--md.jpg',
@@ -77,7 +77,7 @@ const projects = [
     date: '2015',
     website: 'www.paoloshoes.com',
     active: true,
-    role: 'Lead Developer/Co-Designer',
+    role: 'Lead Developer, Co-Designer',
     description:
       'Paolo Shoes is a Shoe Brand out of San Francisco, CA. The site is built on Drupal 6 and Ubercart.',
     screenshot: 'portfolio--paoloshoes3--md.jpg',

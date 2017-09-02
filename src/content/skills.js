@@ -4,7 +4,7 @@ const skills = [
   {
     type: 'passionate',
     human: 'Primary Skills',
-    meta: 'My primary area of expertise',
+    meta: 'My main area of concentration',
     skills: [
       {
         skill: 'React',
@@ -32,7 +32,13 @@ const skills = [
       },
       {
         skill: 'CSS',
-        subSkills: ['Sass/SCSS', 'BEM CSS', 'Flexbox'],
+        subSkills: ['Sass/SCSS', 'BEM CSS', 'FlexBox'],
+        yearStarted: '2011',
+        type: 'front-end'
+      },
+      {
+        skill: 'HTML',
+        subSkills: ['HTML5'],
         yearStarted: '2011',
         type: 'front-end'
       },
@@ -52,12 +58,12 @@ const skills = [
   },
   {
     type: 'noteworthy',
-    human: 'Secondary Skills',
-    meta: 'Various other noteworthy skills',
+    human: 'Supplementary Skills',
+    meta: "Important proficiencies that aren't my primary focus",
     skills: [
       {
         skill: 'Design Apps',
-        subSkills: ['Photoshop', 'Illustrator'],
+        subSkills: ['PhotoShop', 'Illustrator'],
         yearStarted: '2011',
         type: 'design'
       },

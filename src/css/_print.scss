@@ -9,8 +9,16 @@
 	.main-nav__container {
 		display: none !important;
 	}
-	.print-avoid-break { page-break-inside: avoid; }
-	.print-page-break-after { page-break-after: always; }
-	.print-hide { display: none !important; }
-	a:hover { text-decoration: none; }
+	.print-avoid-break {
+		page-break-inside: avoid;
+	}
+	.print-page-break-after {
+		page-break-after: always;
+	}
+	.print-hide {
+		display: none !important;
+	}
+	a:hover {
+		text-decoration: none;
+	}
 }
