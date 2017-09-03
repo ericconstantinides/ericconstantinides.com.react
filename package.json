@@ -33,6 +33,8 @@
     "server": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "restart": "pm2 startOrRestart ecosystem.config.js",
+    "deploy": "pm2 deploy ecosystem.config.js production"
   }
 }

@@ -13,7 +13,7 @@ const projects = [
     description:
       'This site is my journey to learn and grow, and to occasionally muddle through code.',
     screenshot: 'portfolio--muddlingthroughcode--md.jpg',
-    primary_tech: ['Node', 'Express', 'JavaScript', 'JSON', 'Sass']
+    primary_tech: ['Node', 'Express', 'JavaScript', 'Sass']
   },
   {
     id: 'ec_2017_eric-constantinides',
@@ -268,7 +268,7 @@ const projects = [
   {
     id: 'ec_2016_cameron-vail',
     title: 'Cameron Vail Design',
-    alt_title: 'CameronVail.com',
+    alt_title: 'CameronVailDesign.com',
     employer: 'Eric Constantinides',
     date: '2016',
     website: 'www.cameronvaildesign.com',
