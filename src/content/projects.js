@@ -254,7 +254,7 @@ const projects = [
   {
     id: 'fb_2012_island',
     title: 'Island Resort & Casino',
-    alt_title: 'IslandResortCasino.com',
+    alt_title: 'IslandResortAndCasino.com',
     employer: 'Flickerbox, Inc',
     date: '2012',
     website: 'www.islandresortandcasino.com',

@@ -17,15 +17,13 @@ export default class SiteHeader extends Component {
               </Link>
               <a
                 href={resumePdf}
-                target='_blank'
-                rel='noopener noreferrer'
                 className='main-nav__item main-nav__item--pdf'
                 title='Literally the resume page saved as a PDF'
               >
                 PDF Resume
               </a>
               <a
-                href='//muddlingthroughcode.com/'
+                href='https://www.muddlingthroughcode.com/'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='main-nav__item external-link external-link--white'
