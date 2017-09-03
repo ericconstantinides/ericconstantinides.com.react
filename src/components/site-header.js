@@ -12,20 +12,27 @@ export default class SiteHeader extends Component {
                 Home / Portfolio
               </Link>
               <Link to='/resume' className='main-nav__item'>
-                Résume
+                Resume
               </Link>
               <a
                 href='/Eric_Constantinides_resume.pdf'
                 target='_blank'
-                className='main-nav__item'
-                title='Literally the résumé page saved as a PDF'
+                className='main-nav__item main-nav__item--pdf'
+                title='Literally the resume page saved as a PDF'
               >
-                PDF Résume
+                PDF Resume
+              </a>
+              <a
+                href='//muddlingthroughcode.com/'
+                target='_blank'
+                className='main-nav__item external-link external-link--white'
+              >
+                Blog
               </a>
             </nav>
           </div>
         </div>
-        <header className='site-header valprop__header'>
+        {/* <header className='site-header valprop__header'>
           <div className='site-container'>
             <h1 className='site-header__title valprop__title'>
               Eric Constantinides' Portfolio
@@ -36,7 +43,7 @@ export default class SiteHeader extends Component {
               <p className='site-header__intro intro' />
             </div>
           </div>
-        </header>
+        </header> */}
       </section>
     )
   }

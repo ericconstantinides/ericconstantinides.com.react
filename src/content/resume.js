@@ -16,11 +16,10 @@ const resume = {
     github: 'ericconstantinides',
     linkedin: 'constantinides'
   },
-  canonical:
-    'bear://x-callback-url/open-note?id=3E14B199-78A5-468E-905C-793F78F74C5D-74885-0003EB8E172B8A9F',
-  introduction: `<p><b>In a nutshell:</b> I'm am a <strong>MERN Stack (Mongo, Express, React, Node)</strong> developer specializing in <strong>React</strong>, <strong>Redux</strong>, <strong>ES2015</strong>/<strong>ES6</strong>, <strong>Sass</strong>, and <strong>Vanilla JS</strong>.</p>
-  <p><b>Previously:</b> I was Lead Front-End Developer at EverSport Media, responsible for the consumer-facing and administration themes of eversport.tv as well as the front-end for their Single Page App. Before EverSport, I was Senior Web Developer at Flickerbox in San Francisco, creating enterprise-level websites.</p>
-  <p><b>Most Recently:</b> After my last company (EverSport) collapsed, I pivoted my career towards React and the MERN stack.</p>`,
+  canonical: 'this',
+  introduction: `<p><strong>In a nutshell:</strong> I'm am a <strong>MERN Stack (Mongo, Express, React, Node)</strong> developer specializing in <strong>React</strong>, <strong>Redux</strong>, <strong>ES2015</strong>/<strong>ES6</strong>, <strong>Sass</strong>, and <strong>Vanilla JS</strong>.</p>
+  <p><strong>Previously:</strong> I was Lead Front-End Developer at EverSport Media, responsible for the consumer-facing and administration themes of eversport.tv as well as the front-end for their Single Page App. Before EverSport, I was Senior Web Developer at Flickerbox in San Francisco, creating enterprise-level websites.</p>
+  <p><strong>Most Recently:</strong> After my last company (EverSport) collapsed, I pivoted my career towards React and the MERN stack.</p>`,
   experience: [
     {
       name: 'EverSport Media',

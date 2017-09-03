@@ -1,4 +1,34 @@
+export const description = `Hi, my name is Eric. I'm am a MERN Stack (Mongo, Express, React, Node) developer specializing in React, Redux, ES2015/ES6, Sass, and Vanilla JS. This site is a collection of projects that I've worked on.`
+
 const projects = [
+  {
+    id: 'ec_2017_muddling-through-code',
+    title: 'Muddling Through Code',
+    alt_title: 'MuddlingThroughCode.com',
+    employer: 'Eric Constantinides',
+    date: '2017',
+    website: 'www.muddlingthroughcode.com',
+    active: true,
+    role: 'Sole Developer & Designer',
+    description:
+      'This site is my journey to learn and grow, and to occasionally muddle through code.',
+    screenshot: 'portfolio--muddlingthroughcode--md.jpg',
+    primary_tech: ['Node', 'Express', 'JavaScript', 'JSON', 'Sass']
+  },
+  {
+    id: 'ec_2017_eric-constantinides',
+    title: 'Eric Constantinides <dot> com',
+    alt_title: 'EricConstantinides.com',
+    employer: 'Eric Constantinides',
+    date: '2017',
+    website: 'www.ericconstantinides.com',
+    active: true,
+    role: 'Sole Developer & Designer',
+    description:
+      'Created in React which makes it snappy and work well with JSON data. All data is saved in js config files making it quickly expandable.',
+    screenshot: 'portfolio--ericconstantinides--md.jpg',
+    primary_tech: ['React', 'JSON', 'Sass']
+  },
   {
     id: 'ec_2017_constantly-being',
     title: 'Constantly Being',
@@ -20,7 +50,7 @@ const projects = [
     employer: 'EverSport Media',
     date: '2015-2017',
     website: 'eversport.tv',
-    active: true,
+    active: false,
     role: 'Lead Front-End Developer, Co-Designer',
     description:
       'EverSport is the live streaming sports destination and media platform built for fans and content rights holders.',
@@ -34,7 +64,7 @@ const projects = [
     employer: 'EverSport Media',
     date: '2015-2017',
     website: 'www.ericconstantinides.com/embed',
-    active: true,
+    active: false,
     role: 'Lead Front-End Developer, Co-Designer',
     description:
       'Eversport’s Single Page App is a responsive and embeddable JavaScript player for distributing EverSport’s content on third-party websites.',

@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import BodyClassName from 'react-body-classname'
+import DocumentTitle from 'react-document-title'
 // import JSON data here:
-import projects from '../content/projects'
+import projects, { description } from '../content/projects'
 import PortfolioItem from './portfolio_item'
 
 export default class Portfolio extends Component {
@@ -10,19 +11,20 @@ export default class Portfolio extends Component {
       <PortfolioItem {...item} key={item.id} />
     ))
     return (
-      <BodyClassName className='page--portfolio'>
-        <section className='site-section portfolio__section'>
-          <div className='site-container'>
-            <header className='header portfolio__header'>
-              <h1>Projects</h1>
-              <p className='portfolio__intro'>
-                A list of major websites and apps I have been lead developer on.
-              </p>
-            </header>
-            {items}
-          </div>
-        </section>
-      </BodyClassName>
+      <DocumentTitle title='Eric Constantinides | A web app developer in San Jose, CA'>
+        <BodyClassName className='page--portfolio'>
+          <section className='site-section portfolio__section'>
+            <div className='site-container'>
+              <header className='header portfolio__header'>
+                <h1>Eric Constantinides' Portfolio</h1>
+                <p>{description}</p>
+                <h2>Projects</h2>
+              </header>
+              {items}
+            </div>
+          </section>
+        </BodyClassName>
+      </DocumentTitle>
     )
   }
 }

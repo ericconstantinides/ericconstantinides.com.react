@@ -1,9 +1,30 @@
 import React from 'react'
 
 const PortfolioItem = props => {
+  let externalLink = ''
+  if (props.active) {
+    externalLink = (
+      <span>
+        {' '}
+        <a
+          className='external-link'
+          href={`//${props.website}`}
+          title={props.website}
+          target='_blank'
+        >
+          Visit&nbsp;Site
+        </a>
+      </span>
+    )
+  }
+  const tech = props.primary_tech.map((tech, index) => (
+    <span key={index} className={`project__meta-item item-${index}`}>
+      {tech}
+    </span>
+  ))
   return (
     <article
-      className='portfolio-item portfolio-item--large'
+      className='portfolio-item portfolio-item--large print-avoid-break'
       data-id={props.id}
     >
       <div className='portfolio-item__inner'>
@@ -14,14 +35,19 @@ const PortfolioItem = props => {
             alt={`${props.title} screenshot`}
           />
         </div>
-        <div className='portfolio-item__copy'>
+        <div className='portfolio-item__content'>
           <h3 className='kicker'>
             <span>{props.role}</span>
             <span>{props.date}</span>
           </h3>
           <h2 className='portfolio-item__title'>{props.title}</h2>
-          <p>{props.description}</p>
-          {props.link}
+          <p>
+            {props.description}
+            {externalLink}
+          </p>
+          <p className='portfolio-item__tech'>
+            <strong>Primary Technologies:</strong> {tech}
+          </p>
         </div>
       </div>
     </article>

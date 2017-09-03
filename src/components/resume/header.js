@@ -15,7 +15,7 @@ const Header = props => {
           <h1 className='resume-header__title'>{props.name}</h1>
           <ul className='resume-header__meta'>
             <li className='resume-header__meta-item'>
-              <a href={props.email} data-print-url='no'>
+              <a href={`mailto:${props.email}`} data-print-url='no'>
                 {props.email}
               </a>
             </li>
