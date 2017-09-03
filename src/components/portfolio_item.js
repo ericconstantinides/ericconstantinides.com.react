@@ -11,6 +11,7 @@ const PortfolioItem = props => {
           href={`//${props.website}`}
           title={props.website}
           target='_blank'
+          rel='noopener noreferrer'
         >
           Visit&nbsp;Site
         </a>

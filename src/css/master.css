@@ -1116,6 +1116,11 @@ h4 {
   height: auto;
 }
 
+.main-nav {
+  display: flex;
+  justify-content: center;
+}
+
 .main-nav__item {
   display: block;
   float: left;

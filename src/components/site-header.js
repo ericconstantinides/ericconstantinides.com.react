@@ -9,7 +9,7 @@ export default class SiteHeader extends Component {
           <div className='site-container'>
             <nav className='main-nav'>
               <Link to='/' className='main-nav__item'>
-                Home / Portfolio
+                Home<span className='u-small-hide--inline'> / Portfolio</span>
               </Link>
               <Link to='/resume' className='main-nav__item'>
                 Resume
@@ -17,6 +17,7 @@ export default class SiteHeader extends Component {
               <a
                 href='/Eric_Constantinides_resume.pdf'
                 target='_blank'
+                rel='noopener noreferrer'
                 className='main-nav__item main-nav__item--pdf'
                 title='Literally the resume page saved as a PDF'
               >
@@ -25,6 +26,7 @@ export default class SiteHeader extends Component {
               <a
                 href='//muddlingthroughcode.com/'
                 target='_blank'
+                rel='noopener noreferrer'
                 className='main-nav__item external-link external-link--white'
               >
                 Blog

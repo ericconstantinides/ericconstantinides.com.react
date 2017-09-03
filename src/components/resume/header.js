@@ -33,6 +33,7 @@ const Header = props => {
                 href={`//github.com/${props.github}`}
                 title='GitHub'
                 target='_blank'
+                rel='noopener noreferrer'
                 data-print-url={`github.com/${props.github}`}
               >
                 github.com/{props.github}
@@ -42,6 +43,7 @@ const Header = props => {
                 href={`//linkedin.com/in/${props.linkedin}`}
                 title='LinkedIn'
                 target='_blank'
+                rel='noopener noreferrer'
                 data-print-url={`linkedin.com/in/${props.linkedin}`}
               >
                 linkedin.com/in/{props.linkedin}
