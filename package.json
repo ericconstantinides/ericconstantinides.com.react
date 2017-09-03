@@ -13,6 +13,7 @@
     "react-body-classname": "^1.2.0",
     "react-document-title": "^2.0.3",
     "react-dom": "^15.6.1",
+    "react-ga": "^2.2.0",
     "react-html-parser": "^2.0.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
