@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import resumePdf from '../content/Eric_Constantinides_resume.pdf'
 
 export default class SiteHeader extends Component {
   render () {
@@ -15,7 +16,7 @@ export default class SiteHeader extends Component {
                 Resume
               </Link>
               <a
-                href='/Eric_Constantinides_resume.pdf'
+                href={resumePdf}
                 target='_blank'
                 rel='noopener noreferrer'
                 className='main-nav__item main-nav__item--pdf'
