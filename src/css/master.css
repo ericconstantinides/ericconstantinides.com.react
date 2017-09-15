@@ -177,7 +177,7 @@ body {
 }
 
 .site-container {
-  width: 96%;
+  width: calc(100% - 3rem);
   max-width: none;
   margin-left: auto;
   margin-right: auto;
@@ -372,7 +372,7 @@ h1 {
 h2 {
   font-size: 2.25em;
   font-size: 3.6vw;
-  margin: 0 0 0.65em;
+  margin: -0.15em 0 0.65em;
   line-height: 1.1;
   border-bottom: 1px solid #333;
 }
@@ -418,6 +418,7 @@ p {
 p,
 li {
   font-size: 1rem;
+  line-height: 1.3;
 }
 
 li {
@@ -443,6 +444,14 @@ h4 {
 @media only screen and (max-width: 888.88889px) {
   h4 {
     font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  p,
+  li {
+    font-size: 1.125em;
+    line-height: 1.3;
   }
 }
 
@@ -973,8 +982,8 @@ h4 {
   display: flex;
   margin-top: 0;
   flex-flow: column;
-  padding: 0.125em;
-  padding-left: 0.75rem;
+  padding: 0 0.75rem;
+  margin-bottom: 0.35em;
 }
 
 .project__inner {
@@ -988,7 +997,7 @@ h4 {
   font-size: 2rem;
   top: 0;
   left: -0.85rem;
-  line-height: 0.4;
+  line-height: 0.55;
 }
 
 .project__title {
@@ -1004,9 +1013,8 @@ h4 {
   color: #333;
 }
 
-.project__meta {
-  font-size: 0.9em;
-  line-height: 1.2;
+.project__date {
+  white-space: nowrap;
 }
 
 .project__meta-item:before {
@@ -1027,15 +1035,11 @@ h4 {
   }
 }
 
-@media print {
-  .projects__container {
-    font-size: 0.875em;
-  }
-}
-
 .job {
-  margin-bottom: 1.75rem;
-  padding-top: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+.job + .job {
+  margin-top: -0.4rem;
 }
 
 .job__header {
@@ -1054,6 +1058,7 @@ h4 {
 .job__subtitle {
   font-size: 0.55em;
   line-height: 1.6;
+  letter-spacing: 0.0125em;
 }
 
 .job__header-location {
@@ -1203,10 +1208,6 @@ h4 {
 }
 
 @media (max-width: 480px) {
-  li,
-  p {
-    line-height: 1.5;
-  }
   h2 {
     margin-top: 0;
     margin-bottom: 1em;

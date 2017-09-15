@@ -52,7 +52,7 @@ h2 {
   @extend %oswald;
   // font-weight: bold;
   @include responsive(font-size,2.25,1.625);
-  margin: 0 0 0.65em;
+  margin: -0.15em 0 0.65em;
   line-height: 1.1;
   border-bottom: 1px solid #333;
   @media print {
@@ -72,6 +72,7 @@ p {
 }
 p, li {
   font-size: 1rem;
+  line-height: 1.3;
 }
 li {
   margin: 0;
@@ -84,6 +85,12 @@ h4 {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 0;
+}
+@media only screen and (max-width: $bp-small) {
+  p, li {
+    font-size: 1.125em;
+    line-height: 1.3;
+  }
 }
 
 .site-section {
@@ -469,8 +476,8 @@ h4 {
   display: flex;
   margin-top: 0;
   flex-flow: column;
-  padding: 0.125em;
-  padding-left: 0.75rem;
+  padding: 0 0.75rem;
+  margin-bottom: 0.35em;
 }
 .project--skills {
 }
@@ -486,7 +493,7 @@ h4 {
     font-size: 2rem;
     top: 0;
     left: -0.85rem;
-    line-height: 0.4;
+    line-height: 0.55;
   }
 }
 .project__title {
@@ -500,10 +507,13 @@ h4 {
 .project__title-inner {
   color: #333;
 }
-.project__meta {
-  font-size: 0.9em;
-  line-height: 1.2;
+.project__date {
+  white-space: nowrap;
 }
+// .project__meta {
+  // font-size: 0.9em;
+  // line-height: 1.2;
+// }
 .project__meta-item {
   &:before {
     content: ", ";
@@ -522,17 +532,20 @@ h4 {
     padding: 0;
   }
 }
-@media print {
-  .projects__container {
-    font-size: 0.875em;
-  }
-}
+// @media print {
+//   .projects__container {
+//     font-size: 0.875em;
+//   }
+// }
 //-----------------------------------------------------------------------------
 // Job
 //-----------------------------------------------------------------------------
 .job {
-  margin-bottom: 1.75rem;
-  padding-top: 0.25rem;
+  margin-bottom: 1.5rem;
+  // padding-top: 0.25rem;
+  + .job {
+    margin-top: -0.4rem;
+  }
 }
 .job__header {
   display: flex;
@@ -548,6 +561,7 @@ h4 {
 .job__subtitle {
   font-size: 0.55em;
   line-height: 1.6;
+  letter-spacing: 0.0125em;
 }
 .job__header-location {
   font-weight: 500;
@@ -711,9 +725,9 @@ h4 {
   }
 }
 @include breakpoint(small) {
-  li, p {
-    line-height: 1.5;
-  }
+  // li, p {
+  //   line-height: 1.5;
+  // }
   h2 {
     margin-top: 0;
     margin-bottom: 1em;

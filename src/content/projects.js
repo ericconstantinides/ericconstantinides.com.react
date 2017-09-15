@@ -9,7 +9,7 @@ const projects = [
     date: '2017',
     website: 'www.muddlingthroughcode.com',
     active: true,
-    role: 'Sole Developer & Designer',
+    role: 'Developer / Designer',
     description:
       'This site is my journey to learn and grow, and to occasionally muddle through code.',
     screenshot: 'portfolio--muddlingthroughcode--md.jpg',
@@ -23,7 +23,7 @@ const projects = [
     date: '2017',
     website: 'www.ericconstantinides.com',
     active: true,
-    role: 'Sole Developer & Designer',
+    role: 'Developer / Designer',
     description:
       'Created in React which makes it snappy and work well with JSON data. All data is saved in js config files making it quickly expandable.',
     screenshot: 'portfolio--ericconstantinides--md.jpg',
@@ -310,9 +310,9 @@ const projects = [
   {
     id: 'ec_2011_btwd',
     title: 'Bike to Work Day',
-    alt_title: 'YouCanBikeThere.com',
+    alt_title: 'Bike To Work Day: YouCanBikeThere.com',
     employer: 'Eric Constantinides',
-    date: '2011',
+    date: '2008, 2009, 2010, 2011',
     website: 'youcanbikethere.com',
     active: false,
     role: 'Lead Developer',
@@ -338,7 +338,7 @@ const projects = [
   {
     id: 'ec_2010_chicfashionweek',
     title: 'Chic Fashion Week SF',
-    alt_title: 'ChicFashion.com',
+    alt_title: 'ChicFashionWeekSF.com',
     employer: 'Eric Constantinides',
     date: '2010',
     website: 'chicfashionweeksf.com',

@@ -50,7 +50,7 @@ const skills = [
       },
       {
         skill: 'User Experience (UX)',
-        subSkills: ['Responsive Design', 'User Interface (UI)'],
+        subSkills: ['User Interface (UI)', 'Responsive Web Design (RWD)'],
         yearStarted: '2014',
         type: 'design'
       }
