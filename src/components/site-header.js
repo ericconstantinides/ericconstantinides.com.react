@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import resumePdf from '../content/Eric_Constantinides_resume.pdf'
+import resumePdfV2 from '../content/Eric_Constantinides.pdf'
 
 export default class SiteHeader extends Component {
   render () {
@@ -16,7 +16,7 @@ export default class SiteHeader extends Component {
                 Resume
               </Link>
               <a
-                href={resumePdf}
+                href={resumePdfV2}
                 className='main-nav__item main-nav__item--pdf'
                 title='Literally the resume page saved as a PDF'
               >
