@@ -1002,11 +1002,15 @@ h4 {
 
 .project__title {
   font-weight: bold;
-  text-decoration: underline;
   color: #bbb !important;
 }
 .project__title.no-underline {
   text-decoration: none;
+}
+
+.project__position {
+  font-style: italic;
+  font-weight: 500;
 }
 
 .project__title-inner {

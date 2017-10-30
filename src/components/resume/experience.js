@@ -16,7 +16,7 @@ const Experience = props => {
           </span>{' '}
           <span className='project__date'>({project.date})</span>
           <br />
-          <strong>{project.role}</strong>, {tech}
+          <span className='project__position'>{project.role}</span>, {tech}
         </p>
       </article>
     )

@@ -2,6 +2,29 @@ export const description = `Hi, my name is Eric. I'm am a MERN Stack (Mongo, Exp
 
 const projects = [
   {
+    id: 'ec_2017_bottomlessbrunch',
+    title: 'Bottomless Brunch',
+    alt_title: 'BottomlessBrunch.com',
+    employer: 'Eric Constantinides',
+    date: '2017',
+    website: 'www.bottomlessbrunch.com',
+    active: true,
+    role: 'Developer / Designer',
+    description:
+      'React-based web-app that graphically displays brunch spots around the country. Google Maps, Google Places, and YELP API integration. Automatic venue searches allowing new venues to be created in seconds. Built with a Complete Node server API.',
+    screenshot: 'portfolio--bottomlessbrunch--md.jpg',
+    primary_tech: [
+      'React',
+      'MongoDB',
+      'Node',
+      'Express',
+      'JavaScript',
+      'Sass',
+      'Google Maps API',
+      'AWS'
+    ]
+  },
+  {
     id: 'ec_2017_muddling-through-code',
     title: 'Muddling Through Code',
     alt_title: 'MuddlingThroughCode.com',
@@ -332,7 +355,7 @@ const projects = [
     role: 'Lead Developer',
     description:
       'Bottomless Brunch is THE go to place to find out exactly where to get bottomless mimosas for not a lot of money.',
-    screenshot: 'portfolio--bottomlessbrunch--md.jpg',
+    screenshot: 'portfolio--bottomlessbrunch-drupal--md.jpg',
     primary_tech: ['Drupal CMS', 'CSS']
   },
   {

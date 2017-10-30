@@ -14,7 +14,7 @@ const skills = [
       },
       {
         skill: 'JavaScript',
-        subSkills: ['AJAX', 'JSON', 'ES2015 / ES6'],
+        subSkills: ['AJAX', 'JSON', 'ES2015 / ES6', 'lodash'],
         yearStarted: '2014',
         type: 'front-end'
       },

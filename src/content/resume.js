@@ -22,6 +22,23 @@ const resume = {
   <p><strong>Most Recently:</strong> After my last company (EverSport) was sold, I pivoted my career towards React and the MERN stack.</p>`,
   experience: [
     {
+      name: 'Independent Web Developer',
+      location: 'San Jose, CA',
+      startDate: '2005',
+      endDate: 'Current',
+      position: [
+        // {
+        //   title: 'Full Stack React Developer',
+        //   meta: 'Jan 2017 - Current)'
+        // },
+        {
+          title:
+            'Full MERN Stack (currently) and LAMP Stack (previously) Web-App Developer'
+        }
+      ],
+      projects: getProjects('Eric Constantinides')
+    },
+    {
       name: 'EverSport Media',
       description: 'Online Video Provider',
       location: 'Los Gatos, CA',
@@ -58,23 +75,6 @@ const resume = {
         }
       ],
       projects: getProjects('Flickerbox, Inc')
-    },
-    {
-      name: 'Independent Web Developer',
-      location: 'San Jose, CA',
-      startDate: '2005',
-      endDate: 'Current',
-      position: [
-        // {
-        //   title: 'Full Stack React Developer',
-        //   meta: 'Jan 2017 - Current)'
-        // },
-        {
-          title: 'Full Stack Web Developer',
-          info: `Set up sites using a Virtual Private Server (Digital Ocean). Transform mock-ups into HTML templates. Code CSS, HTML, and JavaScript. Host and manage sites.`
-        }
-      ],
-      projects: getProjects('Eric Constantinides')
     }
   ],
   skills,
