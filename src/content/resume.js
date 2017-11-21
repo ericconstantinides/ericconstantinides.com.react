@@ -17,7 +17,7 @@ const resume = {
     linkedin: 'constantinides'
   },
   canonical: 'this',
-  introduction: `<p><strong>In a nutshell:</strong> I'm am a <strong>MERN Stack (Mongo, Express, React, Node)</strong> developer specializing in <strong>React</strong>, <strong>Redux</strong>, <strong>ES2015</strong>/<strong>ES6</strong>, <strong>Sass</strong>, and <strong>Vanilla JS</strong>.</p>
+  introduction: `<p><strong>In a nutshell:</strong> I'm am a <strong>Full-stack React (Mongo, Express, React, Node)</strong> developer specializing in <strong>React</strong>, <strong>Redux</strong>, <strong>ES2015</strong>/<strong>ES6</strong>, <strong>Sass</strong>, and <strong>Vanilla JS</strong>.</p>
   <p><strong>Previously:</strong> I was Lead Front-End Developer at EverSport Media, responsible for the consumer-facing and administration themes of eversport.tv as well as the front-end for their Single Page App. Before EverSport, I was Senior Web Developer at Flickerbox in San Francisco, creating enterprise-level websites.</p>
   <p><strong>Most Recently:</strong> After my last company (EverSport) was sold, I pivoted my career towards React and the MERN stack.</p>`,
   experience: [

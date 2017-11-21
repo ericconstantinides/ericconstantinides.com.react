@@ -1,4 +1,4 @@
-export const description = `Hi, my name is Eric. I'm am a MERN Stack (Mongo, Express, React, Node) developer specializing in React, Redux, ES2015/ES6, Sass, and Vanilla JS. This site is a collection of projects that I've worked on.`
+export const description = `Hi, my name is Eric. I'm am a MERN Stack (Mongo, Express, React, Node) developer specializing in React, Redux, ES2015/ES6, Sass, and Vanilla JS. This site is a collection of projects that I've been lead on.`
 
 const projects = [
   {
@@ -15,6 +15,7 @@ const projects = [
     screenshot: 'portfolio--bottomlessbrunch--md.jpg',
     primary_tech: [
       'React',
+      'Redux',
       'MongoDB',
       'Node',
       'Express',
@@ -82,7 +83,7 @@ const projects = [
   },
   {
     id: 'evr_2017_embed',
-    title: 'EverSport’s Single Page App',
+    title: "EverSport's Single Page App",
     alt_title: 'Single Page App',
     employer: 'EverSport Media',
     date: '2015-2017',
@@ -90,13 +91,13 @@ const projects = [
     active: false,
     role: 'Lead Front-End Developer, Co-Designer',
     description:
-      'Eversport’s Single Page App is a responsive and embeddable JavaScript player for distributing EverSport’s content on third-party websites.',
+      "Eversport's Single Page App is a responsive and embeddable JavaScript player for distributing EverSport's content on third-party websites.",
     screenshot: 'portfolio--eversport-embed--md.jpg',
     primary_tech: ['JavaScript', 'JSON', 'AJAX', 'Sass']
   },
   {
     id: 'evr_2016_crms',
-    title: 'EverSport’s Administration Theme',
+    title: "EverSport's Administration Theme",
     alt_title: 'EverSport.tv Admin Theme',
     employer: 'EverSport Media',
     date: '2015-2017',
