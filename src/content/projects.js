@@ -1,5 +1,4 @@
-export const description = `Hi, my name is Eric. I'm am a MERN Stack (Mongo, Express, React, Node) developer specializing in React, Redux, ES2015/ES6, Sass, and Vanilla JS. This site is a collection of projects that I've been lead on.`
-
+export const description = `My name is Eric Constantinides. I am a MERN (Mongo, Express, React, Node) Full-Stack developer specializing in thoughtful UI/UX,  React, Redux, Sass, and Vanilla JS. This site is a collection of projects that I've been lead developer on.`
 const projects = [
   {
     id: 'ec_2017_bottomlessbrunch',
