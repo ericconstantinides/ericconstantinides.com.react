@@ -10,7 +10,7 @@ const projects = [
     active: true,
     role: 'Developer / Designer',
     description:
-      'React-based web-app that graphically displays brunch spots around the country. Google Maps, Google Places, and YELP API integration. Automatic venue searches allowing new venues to be created in seconds. Built with a Complete Node server API.',
+      'A React-based web-app that graphically displays "bottomless" brunch spots around the country. Google Maps, Google Places, and YELP API integration. Automatic venue creation allows new venues to be created in seconds. Built with a complete Node/Express server API.',
     screenshot: 'portfolio--bottomlessbrunch--md.jpg',
     primary_tech: [
       'React',
