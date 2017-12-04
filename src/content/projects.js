@@ -169,7 +169,7 @@ const projects = [
     alt_title: 'Responsive Animation',
     employer: 'Flickerbox, Inc',
     date: '2014',
-    website: 'https://ericconstantinides.github.io/scrolling-story',
+    website: 'ericconstantinides.github.io/scrolling-story',
     active: true,
     role: 'Lead Animation Developer',
     description:
