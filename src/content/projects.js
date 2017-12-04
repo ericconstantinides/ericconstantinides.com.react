@@ -163,20 +163,20 @@ const projects = [
     screenshot: 'portfolio--adallom--md.jpg',
     primary_tech: ['WordPress CMS', 'JavaScript', 'Sass']
   },
-  /* {
+  {
     id: 'fb_2014_okta-omm',
-    title: 'Okta Mobility Management Animation',
-    alt_title: 'Okta Animation',
+    title: 'Responsive Animation',
+    alt_title: 'Responsive Animation',
     employer: 'Flickerbox, Inc',
     date: '2014',
-    website: 'okta.com/product/mobility-management/',
-    active: false,
+    website: 'https://ericconstantinides.github.io/scrolling-story',
+    active: true,
     role: 'Lead Animation Developer',
     description:
       'An 11-page animated story to help visually explain a product.',
     screenshot: 'portfolio--okta-scrolling-story--md.jpg',
     primary_tech: ['JavaScript', 'Sass']
-  }, */
+  },
   {
     id: 'fb_2014_platfora',
     title: 'Platfora',
