@@ -36,6 +36,6 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "restart": "pm2 startOrRestart ecosystem.config.js",
-    "deploy": "pm2 deploy ecosystem.config.js production"
+    "deploy": "yarn run build && git add . && git commit -m 'Buildout' && git push && pm2 deploy ecosystem.config.js production"
   }
 }
