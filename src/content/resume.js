@@ -33,7 +33,7 @@ const resume = {
         // },
         {
           title:
-            'Full MERN Stack (currently) and LAMP Stack (previously) Web-App Developer'
+            'Full MERN Stack Web-App Developer. Previously Full LAMP Stack Developer'
         }
       ],
       projects: getProjects('Eric Constantinides')
