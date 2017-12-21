@@ -25,6 +25,19 @@ const projects = [
     ]
   },
   {
+    id: 'ec_2017_minesweeper',
+    title: 'MineSweeper',
+    alt_title: 'MineSweeper',
+    employer: 'Eric Constantinides',
+    date: '2017',
+    website: 'eric-minesweeper.surge.sh',
+    active: true,
+    role: 'Developer / Designer',
+    description: 'A React and Redux minesweeper clone.',
+    screenshot: 'portfolio--minesweeper.jpg',
+    primary_tech: ['React', 'Redux', 'JavaScript', 'Sass', 'Surge.sh']
+  },
+  {
     id: 'ec_2017_muddling-through-code',
     title: 'Muddling Through Code',
     alt_title: 'MuddlingThroughCode.com',
