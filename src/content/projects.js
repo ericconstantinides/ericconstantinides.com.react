@@ -34,7 +34,7 @@ const projects = [
     active: true,
     role: 'Developer / Designer',
     description: 'A React and Redux minesweeper clone.',
-    screenshot: 'portfolio--minesweeper.jpg',
+    screenshot: 'portfolio--minesweeper.png',
     primary_tech: ['React', 'Redux', 'JavaScript', 'Sass', 'Surge.sh']
   },
   {
