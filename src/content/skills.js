@@ -2,7 +2,7 @@
 
 const skills = [
   {
-    type: 'passionate',
+    type: 'primary',
     human: 'Primary Skills',
     meta: 'My main area of concentration',
     skills: [
@@ -63,7 +63,7 @@ const skills = [
     ]
   },
   {
-    type: 'noteworthy',
+    type: 'supplementary',
     human: 'Supplementary Skills',
     meta: "Important proficiencies that aren't my primary focus",
     skills: [

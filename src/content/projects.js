@@ -4,7 +4,7 @@ const projects = [
     id: 'ec_2017_bottomlessbrunch',
     title: 'Bottomless Brunch',
     alt_title: 'BottomlessBrunch.com',
-    employer: 'Eric Constantinides',
+    employer: 'Bottomless Brunch but not showing this part in the resume',
     date: '2017',
     website: 'www.bottomlessbrunch.com',
     active: true,
@@ -35,7 +35,7 @@ const projects = [
     role: 'Developer / Designer',
     description: 'A React and Redux minesweeper clone.',
     screenshot: 'portfolio--minesweeper.png',
-    primary_tech: ['React', 'Redux', 'JavaScript', 'Sass', 'Surge.sh']
+    primary_tech: ['React', 'Redux', 'JavaScript', 'Sass']
   },
   {
     id: 'ec_2017_muddling-through-code',
@@ -73,7 +73,7 @@ const projects = [
     date: '2017',
     website: 'www.constantlybeing.com',
     active: true,
-    role: 'Lead Developer, Co-Designer',
+    role: 'Lead Developer, Designer',
     description:
       'Constantly Being is a life & style blog promoting global awareness. The site is built on Drupal 7.',
     screenshot: 'portfolio--constantlybeing--md.jpg',
@@ -111,7 +111,7 @@ const projects = [
     id: 'evr_2016_crms',
     title: "EverSport's Administration Theme",
     alt_title: 'EverSport.tv Admin Theme',
-    employer: 'EverSport Media',
+    employer: 'XXXXX EverSport Media',
     date: '2015-2017',
     website: 'eversport.tv/admin',
     active: false,
@@ -161,7 +161,7 @@ const projects = [
     description:
       'Pure Storage is a Mountain View, California-based enterprise data flash storage company.',
     screenshot: 'portfolio--purestorage--md.jpg',
-    primary_tech: ['Static HTML', 'JavaScript', 'Sass', 'WordPress']
+    primary_tech: ['JavaScript', 'Sass', 'WordPress']
   },
   {
     id: 'fb_2015_adallom',
@@ -180,7 +180,7 @@ const projects = [
     id: 'fb_2014_okta-omm',
     title: 'Responsive Animation',
     alt_title: 'Responsive Animation',
-    employer: 'Flickerbox, Inc',
+    employer: 'XXXXX Flickerbox, Inc',
     date: '2014',
     website: 'ericconstantinides.github.io/scrolling-story',
     active: true,

@@ -17,10 +17,23 @@ const resume = {
     linkedin: 'constantinides'
   },
   canonical: 'this',
-  introduction: `<p><strong>In a nutshell:</strong> I'm am a <strong>Full-stack React (Mongo, Express, React, Node)</strong> developer specializing in <strong>React</strong>, <strong>Redux</strong>, <strong>ES2015</strong>/<strong>ES6</strong>, <strong>Sass</strong>, and <strong>Vanilla JS</strong>.</p>
-  <p><strong>Previously:</strong> I was Lead Front-End Developer at EverSport Media, responsible for the consumer-facing and administration themes of eversport.tv as well as the front-end for their Single Page App. Before EverSport, I was Senior Web Developer at Flickerbox in San Francisco, creating enterprise-level websites.</p>
-  <p><strong>Most Recently:</strong> After my last company (EverSport) was sold, I pivoted my career towards React and the MERN stack.</p>`,
+  introduction: `<p><strong>In a nutshell:</strong> I'm am a <strong>Full-stack React (Mongo, Express, React, Node)</strong> developer specializing in <strong>React</strong>, <strong>Redux</strong>, <strong>Sass</strong>, and <strong>Vanilla JS</strong>.</p>
+  <p><strong>Previously:</strong> I was Lead Front-End Developer at EverSport Media, responsible for the consumer-facing and administration themes of eversport.tv as well as their Single Page App. Before EverSport, I was Senior Web Developer at Flickerbox in San Francisco, creating enterprise-level websites.</p>
+  <p><strong>Most Recently:</strong> I've been working on <a href='https://www.bottomlessbrunch.com' target='_blank'>BottomlessBrunch.com</a>, a React and Redux based web app.</p>`,
   experience: [
+    {
+      name: 'Bottomless Brunch',
+      location: 'San Jose, CA',
+      startDate: 'April, 2017',
+      endDate: 'Current',
+      position: [
+        {
+          title: 'Full-Stack React Developer',
+          info: `Developed a React and Redux powered responsive web-app to graphically render "bottomless" brunch locations in the United States. Integrated Google Maps, Google Places, and YELP APIs. Created administration back-end which combines multiple APIs to create new locations in seconds. Served on an AWS Server through an NGINX proxy with a Node/Express API.`
+        }
+      ],
+      projects: getProjects('Bottomless Brunch')
+    },
     {
       name: 'EverSport Media',
       description: 'Online Video Provider',
@@ -33,7 +46,7 @@ const resume = {
           disabled_meta: 'Sep, 2015 - Jan, 2017',
           canonical:
             'bear://x-callback-url/open-note?id=3E14B199-78A5-468E-905C-793F78F74C5D-74885-0003EB8E172B8A9F',
-          info: `Created and updated EverSport's custom themes and modules using PHP, HTML, JavaScript, and CSS. Designed and developed the site as well as the user-interface for the embeddable JavaScript content and video player to run on 3rd party sites.`
+          info: `Lead Front-end Developer for Eversport's themes and modules using JavaScript, SCSS / CSS, Drupal and PHP. Designed and developed the site and the user-interface for the Single Page App media player that ran on 3rd party sites.`
         }
       ],
       skillsUsed: '',
@@ -47,14 +60,14 @@ const resume = {
       endDate: 'June, 2015',
       position: [
         {
-          title: 'Senior LAMP Stack Web Developer',
+          title: 'Senior Web Developer',
           meta: 'Jan, 2014 - June, 2015',
-          info: `Additional duties included orchestrating the weekly developer meetings; drafting timelines and estimates for future projects; composing technical briefs for client-side contracts.`
+          info: `Orchestrated the weekly developer meetings; drafted timelines and estimates for future projects; composed technical briefs for client-side contracts; lead web development projects.`
         },
         {
-          title: 'LAMP Stack Web Developer',
+          title: 'Web Developer',
           meta: 'Jan, 2012 - Jan, 2014',
-          info: `Architected content structure for websites. Hand-coded HTML, SCSS (CSS), and JS from designer's PSD files into responsive and interactive web pages. Implemented JavaScript libraries and wrote custom JavaScript/jQuery code.`
+          info: `Architected content structure for websites. Hand-coded HTML, SCSS (CSS), and JS from designs into responsive and interactive pages. Implemented JavaScript libraries and wrote custom JavaScript/jQuery code.`
         }
       ],
       projects: getProjects('Flickerbox, Inc')

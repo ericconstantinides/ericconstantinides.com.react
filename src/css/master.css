@@ -1290,6 +1290,9 @@ h4 {
     font-size: 0.825em;
     line-height: 1.25;
   }
+  .site-container {
+    width: 100%;
+  }
   .main-nav__container {
     display: none !important;
   }
