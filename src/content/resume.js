@@ -22,14 +22,14 @@ const resume = {
   <p><strong>Most Recently:</strong> I've been working on <a href='https://www.bottomlessbrunch.com' target='_blank'>BottomlessBrunch.com</a>, a React and Redux based web app.</p>`,
   experience: [
     {
-      name: 'Bottomless Brunch',
+      name: 'BottomlessBrunch.com',
       location: 'San Jose, CA',
       startDate: 'April, 2017',
       endDate: 'Current',
       position: [
         {
           title: 'Full-Stack React Developer',
-          info: `Developed a React and Redux powered responsive web-app to graphically render "bottomless" brunch locations in the United States. Integrated Google Maps, Google Places, and YELP APIs. Created administration back-end which combines multiple APIs to create new locations in seconds. Served on an AWS Server through an NGINX proxy with a Node/Express API.`
+          info: `Developed bottomlessbrunch.com, a React and Redux responsive web-app which graphically renders "bottomless" brunch locations in the United States. Integrated Google Maps, Google Places, and YELP APIs. Created administration back-end which combines multiple APIs to create new locations in seconds. Served on an AWS Server through an NGINX proxy with a Node/Express API.`
         }
       ],
       projects: getProjects('Bottomless Brunch')
