@@ -24,19 +24,19 @@ const projects = [
       'AWS'
     ]
   },
-  // {
-  //   id: 'ec_2017_minesweeper',
-  //   title: 'MineSweeper',
-  //   alt_title: 'MineSweeper',
-  //   employer: 'Eric Constantinides',
-  //   date: '2017',
-  //   website: 'eric-minesweeper.surge.sh',
-  //   active: true,
-  //   role: 'Developer / Designer',
-  //   description: 'A React and Redux minesweeper clone.',
-  //   screenshot: 'portfolio--minesweeper.png',
-  //   primary_tech: ['React', 'Redux', 'JavaScript', 'Sass']
-  // },
+  {
+    id: 'ec_2017_minesweeper',
+    title: 'MineSweeper',
+    alt_title: 'MineSweeper',
+    employer: 'Eric Constantinides',
+    date: '2017',
+    website: 'eric-minesweeper.surge.sh',
+    active: true,
+    role: 'Developer / Designer',
+    description: 'A React and Redux minesweeper clone.',
+    screenshot: 'portfolio--minesweeper.png',
+    primary_tech: ['React', 'Redux', 'JavaScript', 'Sass']
+  },
   {
     id: 'ec_2017_muddling-through-code',
     title: 'Muddling Through Code',
