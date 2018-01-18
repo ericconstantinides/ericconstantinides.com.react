@@ -1021,14 +1021,6 @@ h4 {
   white-space: nowrap;
 }
 
-.project__meta-item:before {
-  content: ', ';
-}
-
-.project__meta-item.item-0:before {
-  content: none;
-}
-
 @media (max-width: 480px) {
   .projects__container {
     display: block;

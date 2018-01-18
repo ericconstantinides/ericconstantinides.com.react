@@ -18,11 +18,6 @@ const PortfolioItem = props => {
       </span>
     )
   }
-  const tech = props.primary_tech.map((tech, index) => (
-    <span key={index} className={`project__meta-item item-${index}`}>
-      {tech}
-    </span>
-  ))
   return (
     <article
       className='portfolio-item portfolio-item--large print-avoid-break'
@@ -47,7 +42,8 @@ const PortfolioItem = props => {
             {externalLink}
           </p>
           <p className='portfolio-item__tech'>
-            <strong>Primary Technologies:</strong> {tech}
+            <strong>Primary Technologies:</strong>{' '}
+            {props.primary_tech.join(', ')}
           </p>
         </div>
       </div>

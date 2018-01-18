@@ -513,18 +513,6 @@ h4 {
 .project__date {
   white-space: nowrap;
 }
-// .project__meta {
-  // font-size: 0.9em;
-  // line-height: 1.2;
-// }
-.project__meta-item {
-  &:before {
-    content: ", ";
-  }
-  &.item-0:before {
-    content: none;
-  }
-}
 @media (max-width: $bp-small) {
   .projects__container {
     // margin-left: -0.25em;

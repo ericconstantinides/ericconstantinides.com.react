@@ -3,11 +3,6 @@ import React from 'react'
 const Experience = props => {
   function renderProjects (project) {
     const title = project.alt_title ? project.alt_title : project.title
-    const tech = project.primary_tech.map((tech, index) => (
-      <span key={index} className={`project__meta-item item-${index}`}>
-        {tech}
-      </span>
-    ))
     return (
       <article className='project' key={project.id}>
         <p className='project__inner project__meta'>
@@ -16,7 +11,8 @@ const Experience = props => {
           </span>{' '}
           <span className='project__date'>({project.date})</span>
           <br />
-          <span className='project__position'>{project.role}</span>, {tech}
+          <span className='project__position'>{project.role}</span>
+          , {project.primary_tech.join(', ')}
         </p>
       </article>
     )
