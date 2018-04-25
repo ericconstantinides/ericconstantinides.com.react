@@ -1,5 +1,18 @@
-export const description = `My name is Eric Constantinides. I am a MERN (Mongo, Express, React, Node) Full-Stack developer specializing in thoughtful UI/UX,  React, Redux, Sass, and Vanilla JS. This site is a collection of projects that I've been lead developer on.`
+export const description = `My name is Eric Constantinides. I am a Front-end / Javascript / React engineer specializing in thoughtful UI/UX, React, Redux, Sass, and Vanilla JS. This site is a collection of projects that I've worked on.`
 const projects = [
+  {
+    id: 'ec_2018_insureon',
+    title: 'Insureon Customer Portal',
+    alt_title: 'cp.insureon.com',
+    employer: 'Insureon.com',
+    date: '2018',
+    website: 'up.insureon.com',
+    active: false,
+    role: 'React / Javascript Engineer',
+    description: 'A React-based customer portal web-app for Insureon.com.',
+    screenshot: 'portfolio--insureon-customer-portal--md.png',
+    primary_tech: ['React', 'Webpack', 'CSS Modules', 'Post CSS', 'JavaScript']
+  },
   {
     id: 'ec_2017_bottomlessbrunch',
     title: 'Bottomless Brunch',
