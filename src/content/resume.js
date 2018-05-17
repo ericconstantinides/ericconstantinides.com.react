@@ -17,18 +17,31 @@ const resume = {
     linkedin: 'constantinides'
   },
   canonical: 'this',
-  introduction: `<p><strong>In a nutshell:</strong> I'm am a <strong>Full-stack React (Mongo, Express, React, Node)</strong> developer specializing in <strong>React</strong>, <strong>Redux</strong>, <strong>Sass</strong>, and <strong>Vanilla JS</strong>.</p>
+  introduction: `<p><strong>In a nutshell:</strong> I'm am a <strong>Front-end UI Engineer specializing in <strong>React</strong>, <strong>Redux</strong>, <strong>CSS</strong>, and <strong>Vanilla JS</strong>.</p>
   <p><strong>Previously:</strong> I was Lead Front-End Developer at EverSport Media, responsible for the consumer-facing and administration themes of eversport.tv as well as their Single Page App. Before EverSport, I was Senior Web Developer at Flickerbox in San Francisco, creating enterprise-level websites.</p>
   <p><strong>Most Recently:</strong> I've been working on <a href='https://www.bottomlessbrunch.com' target='_blank'>BottomlessBrunch.com</a>, a React and Redux based web app.</p>`,
   experience: [
     {
-      name: 'BottomlessBrunch.com',
+      name: 'Insureon',
       location: 'San Jose, CA',
-      startDate: 'April, 2017',
+      startDate: 'January, 2018',
       endDate: 'Current',
       position: [
         {
-          title: 'Full-Stack React Developer',
+          title: 'Front-end UI Engineer',
+          info: `Co-engineer for building a new customer portal site for Insureon. Portal is built using React, Webpack, CSS Modules, Post-CSS, Babel, React Router, etc. Created custom JavaScript field and validation framework for fast Object-based prototyping of forms and its validation.`
+        }
+      ],
+      projects: getProjects('Insureon')
+    },
+    {
+      name: 'BottomlessBrunch.com',
+      location: 'San Jose, CA',
+      startDate: 'April, 2017',
+      endDate: 'January, 2018',
+      position: [
+        {
+          title: 'Full-Stack UI Engineer',
           info: `Developed bottomlessbrunch.com, a React and Redux responsive web-app which graphically renders "bottomless" brunch locations in the United States. Integrated Google Maps, Google Places, and YELP APIs. Created administration back-end which combines multiple APIs to create new locations in seconds. Served on an AWS Server through an NGINX proxy with a Node/Express API.`
         }
       ],

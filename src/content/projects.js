@@ -3,12 +3,12 @@ const projects = [
   {
     id: 'ec_2018_insureon',
     title: 'Insureon Customer Portal',
-    alt_title: 'cp.insureon.com',
-    employer: 'Insureon.com',
+    alt_title: 'Customer Portal',
+    employer: 'Insureon',
     date: '2018',
     website: 'up.insureon.com',
     active: false,
-    role: 'React / Javascript Engineer',
+    role: 'Javascript / React Engineer',
     description: 'A React-based customer portal web-app for Insureon.com.',
     screenshot: 'portfolio--insureon-customer-portal--md.png',
     primary_tech: ['React', 'Webpack', 'CSS Modules', 'Post CSS', 'JavaScript']
