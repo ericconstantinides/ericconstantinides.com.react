@@ -17,9 +17,9 @@ const resume = {
     linkedin: 'constantinides'
   },
   canonical: 'this',
-  introduction: `<p><strong>In a nutshell:</strong> I'm am a <strong>Front-end UI Engineer specializing in <strong>React</strong>, <strong>Redux</strong>, <strong>CSS</strong>, and <strong>Vanilla JS</strong>.</p>
-  <p><strong>Previously:</strong> I was Lead Front-End Developer at EverSport Media, responsible for the consumer-facing and administration themes of eversport.tv as well as their Single Page App. Before EverSport, I was Senior Web Developer at Flickerbox in San Francisco, creating enterprise-level websites.</p>
-  <p><strong>Most Recently:</strong> I've been working on <a href='https://www.bottomlessbrunch.com' target='_blank'>BottomlessBrunch.com</a>, a React and Redux based web app.</p>`,
+  introduction: `<p><strong>In a nutshell:</strong> I'm am a <strong>Front-end UI Engineer</strong> specializing in <strong>React</strong>, <strong>Redux</strong>, <strong>CSS</strong>, and <strong>Vanilla JS</strong>.</p>
+  <p><strong>Most Recently:</strong> I'm a React / UI Engineer at Insureon working on the Customer Portal Web App using React and JavaScript.</p>
+  <p><strong>Previously:</strong> I was working on <a href='https://www.bottomlessbrunch.com' target='_blank'>BottomlessBrunch.com</a>, a React and Redux based web app. <strong>Before that</strong> I was Lead Front-End Developer at EverSport Media. <strong>Before that</strong> I was a Web Developer at Flickerbox in San Francisco.</p>`,
   experience: [
     {
       name: 'Insureon',
