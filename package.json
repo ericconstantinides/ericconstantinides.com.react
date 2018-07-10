@@ -28,7 +28,7 @@
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
-    "watch-css": "yarn run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "precommit": "lint-staged",
     "start": "react-scripts start",
     "server": "node server.js",
@@ -36,6 +36,6 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "restart": "pm2 startOrRestart ecosystem.config.js",
-    "deploy": "yarn run build && git add . && git commit -m 'Buildout' && git push && pm2 deploy ecosystem.config.js production"
+    "deploy": "npm run build && git add . && git commit -m 'Buildout' && git push && pm2 deploy ecosystem.config.js production"
   }
 }
