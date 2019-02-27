@@ -1,19 +1,19 @@
 import projects from './projects'
 // return array of objects of employer
-function getProjects (employer) {
-  return projects.filter(project => project.employer === employer)
-}
+const getProjects = employer =>
+  projects.filter(project => project.employer === employer)
 const experience = [
   {
     name: 'Insureon',
-    location: 'San Jose, CA',
+    location: 'Campbell, CA',
+    description: 'Online Business Insurance Broker',
     startDate: 'January, 2018',
     endDate: 'Current',
     position: [
       {
         title: 'Front-end UI Engineer',
         info:
-          'Co-engineer for building a new customer portal site for Insureon. Portal is built using React, Webpack, CSS Modules, Post-CSS, Babel, React Router, etc. My customized initiatives:'
+          'Co-engineer for building the Customer Portal for Insureon. Customer Portal is built using React, Webpack, CSS Modules, Post-CSS, Babel, React Router, etc. Responsible for building out app pages using CSS and JS. In addition, my authored initiatives include:'
       }
     ],
     // projects: getProjects('Insureon'),
@@ -23,37 +23,40 @@ const experience = [
         info: 'framework for Object-based form prototyping'
       },
       {
-        title: 'Form Validation',
-        info: 'validation of forms based on JSON rules'
+        title: 'Intelligent Form Validation',
+        info:
+          'cascading rule-based validation with minimally intrusive user errors'
       },
       {
         title: 'Console Features',
-        info: 'test UI features via console'
-      },
-      {
-        title: 'withAnalytics Higher-Order-Component',
-        info: 'Google Analytics wrapper for triggering analytic events'
-      },
-      {
-        title: 'Progressive Web App',
-        info: 'PWA implementation including Manifest and Service Workers'
-      },
-      {
-        title: 'CSS variables in JS',
-        info:
-          'globally available hot-module-replacement CSS variables used in both JS and CSS'
+        info: 'implement dormant UI features via console'
       },
       {
         title: 'Create-Menu',
-        info: 'create responsive HTML menus from JSON objects'
+        info: 'build responsive HTML menus from JSON objects'
+      },
+      {
+        title: 'Progressive Web App',
+        info:
+          'PWA implementation including Manifest and smart-caching using Service Workers'
+      },
+      {
+        title: 'Global CSS variables in JS',
+        info:
+          'CSS variables accessible in both JS and CSS with hot-module-replacement'
+      },
+      {
+        title: 'withAnalytics Higher-Order-Component',
+        info:
+          'Google Analytics wrapper for intelligently triggering analytic events'
       },
       {
         title: 'withAnimation Higher-Order-Component',
-        info: 'add animation props to any component'
+        info: 'tiny wrapper to add CSS animation props to any component'
       },
       {
         title: 'Tiny Datepicker Component',
-        info: '90% smaller DatePicker based on Tiny Date Picker'
+        info: '90% smaller DatePicker with no dependencies on Moment.js'
       }
     ]
   },
