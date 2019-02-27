@@ -5,7 +5,7 @@ const projects = [
     title: 'Insureon Customer Portal',
     alt_title: 'Customer Portal',
     employer: 'Insureon',
-    date: '2018',
+    date: '2018-Current',
     website: 'up.insureon.com',
     active: false,
     role: 'Javascript / React Engineer',

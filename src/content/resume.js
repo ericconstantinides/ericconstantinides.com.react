@@ -29,10 +29,50 @@ const resume = {
       position: [
         {
           title: 'Front-end UI Engineer',
-          info: `Co-engineer for building a new customer portal site for Insureon. Portal is built using React, Webpack, CSS Modules, Post-CSS, Babel, React Router, etc. Created custom JavaScript field and validation framework for fast Object-based prototyping of forms and its validation.`
+          info:
+            'Co-engineer for building a new customer portal site for Insureon. Portal is built using React, Webpack, CSS Modules, Post-CSS, Babel, React Router, etc. My customized initiatives:'
         }
       ],
-      projects: getProjects('Insureon')
+      // projects: getProjects('Insureon'),
+      initiatives: [
+        {
+          title: 'JSON Forms',
+          info: 'framework for Object-based form prototyping'
+        },
+        {
+          title: 'Form Validation',
+          info: 'validation of forms based on JSON rules'
+        },
+        {
+          title: 'Console Features',
+          info: 'test UI features via console'
+        },
+        {
+          title: 'withAnalytics Higher-Order-Component',
+          info: 'Google Analytics wrapper for triggering analytic events'
+        },
+        {
+          title: 'Progressive Web App',
+          info: 'PWA implementation including Manifest and Service Workers'
+        },
+        {
+          title: 'CSS variables in JS',
+          info:
+            'globally available hot-module-replacement CSS variables used in both JS and CSS'
+        },
+        {
+          title: 'Create-Menu',
+          info: 'create responsive HTML menus from JSON objects'
+        },
+        {
+          title: 'withAnimation Higher-Order-Component',
+          info: 'add animation props to any component'
+        },
+        {
+          title: 'Tiny Datepicker Component',
+          info: '90% smaller DatePicker based on Tiny Date Picker'
+        }
+      ]
     },
     {
       name: 'BottomlessBrunch.com',

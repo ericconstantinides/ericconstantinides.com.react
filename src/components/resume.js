@@ -3,10 +3,10 @@ import BodyClassName from 'react-body-classname'
 import DocumentTitle from 'react-document-title'
 // import { render } from 'react-dom';
 import resumeJS from '../content/resume.js'
-import Header from './resume/header'
-import Introduction from './resume/introduction'
-import Experience from './resume/experience'
-import Skills from './resume/skills'
+import Header from './resume/Header'
+import Introduction from './resume/Introduction'
+import Experience from './resume/Experience'
+import Skills from './resume/Skills'
 // console.log(resumeJS)
 
 const Resume = props => {

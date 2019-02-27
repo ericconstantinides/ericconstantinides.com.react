@@ -1,4 +1,10 @@
 import React from 'react'
+import Initiatives from './Initiatives'
+
+const splitArray = arr => [
+  arr.filter((item, index) => index + 1 <= Math.round(arr.length / 2)),
+  arr.filter((item, index) => index + 1 > Math.round(arr.length / 2))
+]
 
 const Experience = props => {
   function renderProjects (project) {
@@ -47,16 +53,9 @@ const Experience = props => {
     ) : (
       ''
     )
-    const leftProjects = item.projects
-      .filter((project, index) => {
-        return index + 1 <= Math.round(item.projects.length / 2)
-      })
-      .map(renderProjects)
-    const rightProjects = item.projects
-      .filter((project, index) => {
-        return index + 1 > Math.round(item.projects.length / 2)
-      })
-      .map(renderProjects)
+    const splitProjects = item.projects ? splitArray(item.projects) : null
+    const leftProjects = splitProjects && splitProjects[0].map(renderProjects)
+    const rightProjects = splitProjects && splitProjects[1].map(renderProjects)
     return (
       <article key={item.name} className='job print-avoid-break'>
         <header className='job__header'>
@@ -74,10 +73,14 @@ const Experience = props => {
           </div>
         </header>
         <div className='job__content'>{item.position.map(renderPosition)}</div>
-        <div className='projects__container'>
-          <div className='projects__column'>{leftProjects}</div>
-          <div className='projects__column'>{rightProjects}</div>
-        </div>
+        <Initiatives initiatives={item.initiatives} />
+        {item.projects &&
+        item.projects.length > 0 && (
+          <div className='projects__container'>
+            <div className='projects__column'>{leftProjects}</div>
+            <div className='projects__column'>{rightProjects}</div>
+          </div>
+        )}
       </article>
     )
   }
