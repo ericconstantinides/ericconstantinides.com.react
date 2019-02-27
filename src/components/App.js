@@ -18,6 +18,16 @@ function Analytics (props) {
   return null
 }
 
+// unregister serviceworkers:
+if ('serviceWorker' in navigator) {
+  // unregister the service worker if serviceWorker feature is disabled:
+  navigator.serviceWorker.getRegistrations().then(function (registrations) {
+    for (let registration of registrations) {
+      registration.unregister()
+    }
+  })
+}
+
 class App extends Component {
   render () {
     return (
