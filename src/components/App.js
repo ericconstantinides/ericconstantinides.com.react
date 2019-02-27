@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
 import '../css/master.css'
-import SiteHeader from './site-header'
-import SiteFooter from './site-footer'
-import Portfolio from './portfolio'
-import Resume from './resume'
+import SiteHeader from './SiteHeader'
+import SiteFooter from './SiteFooter'
+import Portfolio from './Portfolio'
+import Resume from './Resume'
 
 import ReactGA from 'react-ga'
 ReactGA.initialize('UA-50643936-1')

@@ -15,8 +15,7 @@ const Experience = props => {
           <span className='project__title'>
             <span className='project__title-inner'>{title}</span>
           </span>{' '}
-          <span className='project__date'>({project.date})</span>
-          <br />
+          <span className='project__date'>({project.date}) </span>
           <span className='project__position'>{project.role}</span>
           , {project.primary_tech.join(', ')}
         </p>
