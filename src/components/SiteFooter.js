@@ -2,9 +2,11 @@ import React from 'react'
 
 const SiteFooter = () => {
   return (
-    <footer className='site-footer print-hide'>
+    <footer className='u-ta-c site-footer print-hide'>
       <div className='site-container'>
-        <p className='site-footer__p'>&copy; 2017 Eric Constantinides</p>
+        <p className='site-footer__p'>
+          &copy; {new Date().getFullYear()} Eric Constantinides
+        </p>
       </div>
     </footer>
   )
