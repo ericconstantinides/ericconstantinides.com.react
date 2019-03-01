@@ -1,4 +1,3 @@
-export const description = `My name is Eric Constantinides. I am a Front-end / Javascript / React engineer specializing in thoughtful UI/UX, React, Redux, Sass, and Vanilla JS. This site is a collection of projects that I've worked on.`
 const projects = [
   {
     id: 'ec_2018_insureon',

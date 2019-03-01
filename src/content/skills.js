@@ -1,5 +1,3 @@
-// canonical: this
-
 const skills = [
   {
     type: 'primary',

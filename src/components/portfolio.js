@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import BodyClassName from 'react-body-classname'
 import DocumentTitle from 'react-document-title'
 // import JSON data here:
-import projects, { description } from '../content/projects'
+import projects from '../content/projects'
+import introduction from '../content/introduction'
 import PortfolioItem from './portfolio_item'
 
 export default class Portfolio extends Component {
@@ -17,7 +18,7 @@ export default class Portfolio extends Component {
             <div className='site-container'>
               <header className='header portfolio__header'>
                 <h1>Eric Constantinides' Portfolio</h1>
-                <p>{description}</p>
+                <p>{introduction.homepage}</p>
                 <h2>Projects</h2>
               </header>
               {items}

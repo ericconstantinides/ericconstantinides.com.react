@@ -83,8 +83,6 @@ const experience = [
       {
         title: 'Lead Front-end Developer',
         disabled_meta: 'Sep, 2015 - Jan, 2017',
-        canonical:
-          'bear://x-callback-url/open-note?id=3E14B199-78A5-468E-905C-793F78F74C5D-74885-0003EB8E172B8A9F',
         info: `Lead Front-end Developer for Eversport's themes and modules using JavaScript, SCSS / CSS, Drupal and PHP. Designed and developed the site and the user-interface for the Single Page App media player that ran on 3rd party sites.`
       }
     ],
