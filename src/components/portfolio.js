@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import BodyClassName from 'react-body-classname'
 import DocumentTitle from 'react-document-title'
-// import JSON data here:
+
+import PortfolioItem from './PortfolioItem'
+
 import projects from '../content/projects'
 import introduction from '../content/introduction'
-import PortfolioItem from './portfolio_item'
 
 export default class Portfolio extends Component {
   render () {
