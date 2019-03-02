@@ -16,8 +16,8 @@ const Experience = props => {
             <span className='project__title-inner'>{title}</span>
           </span>{' '}
           <span className='project__date'>({project.date}) </span>
-          <span className='project__position'>{project.role}</span>
-          , {project.primary_tech.join(', ')}
+          <span className='project__position'>{project.role}</span>,{' '}
+          {project.primary_tech.join(', ')}
         </p>
       </article>
     )
@@ -73,8 +73,7 @@ const Experience = props => {
         </header>
         <div className='job__content'>{item.position.map(renderPosition)}</div>
         <Initiatives initiatives={item.initiatives} />
-        {item.projects &&
-        item.projects.length > 0 && (
+        {item.projects && item.projects.length > 0 && (
           <div className='projects__container'>
             <div className='projects__column'>{leftProjects}</div>
             <div className='projects__column'>{rightProjects}</div>

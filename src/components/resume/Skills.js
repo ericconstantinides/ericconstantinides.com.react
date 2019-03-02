@@ -7,7 +7,8 @@ const Skills = props => {
         <p className='project__inner project__meta u-mb-0'>
           <span className='project__title no-underline'>
             <span className='project__title-inner'>{item.skill}</span>
-          </span>, {item.subSkills.join(', ')}
+          </span>
+          , {item.subSkills.join(', ')}
         </p>
       </div>
     )
